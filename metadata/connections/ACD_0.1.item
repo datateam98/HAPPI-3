@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_XlksMPdTEeqx8IrRgK3QMA" name="ACD" id="_BDiCoPdTEeqx8IrRgK3QMA" label="ACD" dataPackage="_AucoYKhaEe2LhP22qbKLvw" DatabaseType="Informix" DriverClass="com.informix.jdbc.IfxDriver" URL="jdbc:informix-sqli://h92acd01:9088/hppcdb:informixserver=;" Port="9088" Username="informix" Password="enc:system.encryption.key.v1:uiIJvT6hCH1K1il2xvv2y5bPoBSqO/IFK/THsKxk7R2Fhicwc186sQ==" ServerName="h92acd01" DatasourceName="" FileFieldName="" SID="hppcdb" SqlSynthax="" StringQuote="" NullChar="" DbmsId="informix_id" ProductId="INFORMIX" AdditionalParams="" StandardSQL="true" SQLMode="false" UiSchema="">
+    <taggedValue xmi:id="_XlksMfdTEeqx8IrRgK3QMA" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_XmyNIPdTEeqx8IrRgK3QMA" tag="package filter" value=""/>
+    <taggedValue xmi:id="_Xm8lMPdTEeqx8IrRgK3QMA" tag="Status" value=""/>
+    <taggedValue xmi:id="_Xm8lMfdTEeqx8IrRgK3QMA" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_Xm8lMvdTEeqx8IrRgK3QMA" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_Xm8lM_dTEeqx8IrRgK3QMA" tag="Description" value=""/>
+    <taggedValue xmi:id="_Xm8lNPdTEeqx8IrRgK3QMA" tag="Author" value=""/>
+    <taggedValue xmi:id="_Xm8lNfdTEeqx8IrRgK3QMA" tag="otherParameter"/>
+    <taggedValue xmi:id="_XoT3IPdTEeqx8IrRgK3QMA" tag="DB ProductName" value="Informix Dynamic Server"/>
+    <taggedValue xmi:id="_XoUeMPdTEeqx8IrRgK3QMA" tag="DB ProductVersion" value="12.10.TC12"/>
+    <taggedValue xmi:id="_XoUeMfdTEeqx8IrRgK3QMA" tag="DB IdentifierQuoteString" value=" "/>
+    <parameters xmi:id="_XlksMvdTEeqx8IrRgK3QMA" key="CONN_PARA_KEY_USERNAME" value="informix"/>
+    <parameters xmi:id="_sxFbYHW9Eeut-cnt2FO1IA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Catalog xmi:id="_AucoYKhaEe2LhP22qbKLvw" name="hppcdb" dataManager="_XlksMPdTEeqx8IrRgK3QMA">
+    <ownedElement xsi:type="orgomg.cwm.resource.relational:Schema" xmi:id="_AucoYahaEe2LhP22qbKLvw" name="informix"/>
+  </orgomg.cwm.resource.relational:Catalog>
+</xmi:XMI>

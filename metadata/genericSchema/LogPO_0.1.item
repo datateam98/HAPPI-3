@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_UTqYUKscEeqw7OePHz-4-Q" comment="connectionComment" label="connectionLabel" dataPackage="_UTqYUascEeqw7OePHz-4-Q"/>
+  <TalendMetadata:GenericPackage xmi:id="_UTqYUascEeqw7OePHz-4-Q" dataManager="_UTqYUKscEeqw7OePHz-4-Q">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_UTq_YKscEeqw7OePHz-4-Q" id="_0kZC0KseEeqw7OePHz-4-Q" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_Y6scEeqw7OePHz-4-Q" name="NUM_APPEL" id="6918" label="NUM_APPEL" length="50" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UTq_ZKscEeqw7OePHz-4-Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_ZascEeqw7OePHz-4-Q" name="NOM" id="6919" label="NOM" length="50" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UTq_ZqscEeqw7OePHz-4-Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_Z6scEeqw7OePHz-4-Q" name="CD_TYPE_APPEL" id="6920" label="CD_TYPE_APPEL" length="1" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_UTq_aKscEeqw7OePHz-4-Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_aascEeqw7OePHz-4-Q" name="DATE" id="6921" label="DATE" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;yyyyMMdd&quot;">
+        <initialValue xmi:id="_UTq_aqscEeqw7OePHz-4-Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_a6scEeqw7OePHz-4-Q" name="HEURE" id="6922" label="HEURE" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;HH:mm:ss&quot;">
+        <initialValue xmi:id="_UTq_bKscEeqw7OePHz-4-Q"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_UTq_bascEeqw7OePHz-4-Q" name="DUREE" id="6923" label="DUREE" length="10" precision="-1" sourceType="" talendType="id_Date" pattern="&quot;HH:mm:ss&quot;">
+        <initialValue xmi:id="_UTq_bqscEeqw7OePHz-4-Q"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

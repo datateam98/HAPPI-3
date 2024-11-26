@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_WI69sFEIEeuLhtUTICGHUA" name="PDO" dataPackage="_WI69sVEIEeuLhtUTICGHUA" Server="Localhost 127.0.0.1" FilePath="C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/in/DB PDO.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="1" FirstLineCaption="true" SheetName="BDD" firstColumn="1" thousandSeparator="" decimalSeparator="'.'" selectAllSheets="true" sheetList="BDD:w&#xA;" generationMode="USER_MODE">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+    <sheetColumns>K</sheetColumns>
+    <sheetColumns>L</sheetColumns>
+    <sheetColumns>M</sheetColumns>
+    <sheetColumns>N</sheetColumns>
+    <sheetColumns>O</sheetColumns>
+    <sheetColumns>P</sheetColumns>
+    <sheetColumns>Q</sheetColumns>
+    <sheetColumns>R</sheetColumns>
+    <sheetColumns>S</sheetColumns>
+    <sheetColumns>T</sheetColumns>
+    <sheetColumns>U</sheetColumns>
+    <sheetColumns>V</sheetColumns>
+    <sheetColumns>W</sheetColumns>
+    <sheetColumns>X</sheetColumns>
+    <sheetColumns>Y</sheetColumns>
+    <sheetColumns>Z</sheetColumns>
+    <sheetColumns>AA</sheetColumns>
+    <sheetColumns>AB</sheetColumns>
+    <sheetColumns>AC</sheetColumns>
+    <sheetColumns>AD</sheetColumns>
+    <sheetColumns>AE</sheetColumns>
+    <sheetColumns>AF</sheetColumns>
+    <sheetColumns>AG</sheetColumns>
+    <sheetColumns>AH</sheetColumns>
+    <sheetColumns>AI</sheetColumns>
+    <sheetColumns>AJ</sheetColumns>
+    <sheetColumns>AK</sheetColumns>
+    <sheetColumns>AL</sheetColumns>
+    <sheetColumns>AM</sheetColumns>
+    <sheetColumns>AN</sheetColumns>
+    <sheetColumns>AO</sheetColumns>
+    <sheetColumns>AP</sheetColumns>
+    <sheetColumns>AQ</sheetColumns>
+    <sheetColumns>AR</sheetColumns>
+    <sheetColumns>AS</sheetColumns>
+    <sheetColumns>AT</sheetColumns>
+    <sheetColumns>AU</sheetColumns>
+    <sheetColumns>AV</sheetColumns>
+    <sheetColumns>AW</sheetColumns>
+    <sheetColumns>AX</sheetColumns>
+    <sheetColumns>AY</sheetColumns>
+    <sheetColumns>AZ</sheetColumns>
+    <sheetColumns>BA</sheetColumns>
+    <sheetColumns>BB</sheetColumns>
+    <sheetColumns>BC</sheetColumns>
+    <sheetColumns>BD</sheetColumns>
+    <sheetColumns>BE</sheetColumns>
+    <sheetColumns>BF</sheetColumns>
+    <sheetColumns>BG</sheetColumns>
+    <sheetColumns>BH</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_WI69sVEIEeuLhtUTICGHUA" name="default" dataManager="_WI69sFEIEeuLhtUTICGHUA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_WI69slEIEeuLhtUTICGHUA" id="_f_LDYFEDEeuLhtUTICGHUA" label="ExcelPDO">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69s1EIEeuLhtUTICGHUA" label="NUMERO_DE_GROUPE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69tFEIEeuLhtUTICGHUA" label="COMMUNE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69tVEIEeuLhtUTICGHUA" label="DIRECTION_TERRITORIALE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69tlEIEeuLhtUTICGHUA" label="DIRECTION_PROXIMITE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69t1EIEeuLhtUTICGHUA" label="ADRESSE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69uFEIEeuLhtUTICGHUA" label="ADRESSE_GENERIQUE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69uVEIEeuLhtUTICGHUA" label="NOM_CHARGE_D_OPERATION" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69ulEIEeuLhtUTICGHUA" label="NOM_CHARGE_DE_DEVELOPPEMENT" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69u1EIEeuLhtUTICGHUA" label="TYPE_PRODUCTION" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69vFEIEeuLhtUTICGHUA" label="RECONSTITUTION_DE_L_OFFRE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69vVEIEeuLhtUTICGHUA" label="AVANCEMENT" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69vlEIEeuLhtUTICGHUA" label="AVANCEMENT_ETUDE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69v1EIEeuLhtUTICGHUA" label="PROMOTEUR" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69wFEIEeuLhtUTICGHUA" label="NOM_ARCHITECTE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69wVEIEeuLhtUTICGHUA" label="NOM_ENTREPRISE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69wlEIEeuLhtUTICGHUA" label="TYPE_PRODUIT" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69w1EIEeuLhtUTICGHUA" label="TOTAL_LOGEMENTS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69xFEIEeuLhtUTICGHUA" label="PLAI" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69xVEIEeuLhtUTICGHUA" label="PLUS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69xlEIEeuLhtUTICGHUA" label="PLS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69x1EIEeuLhtUTICGHUA" label="PLI" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69yFEIEeuLhtUTICGHUA" label="LIBRE" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69yVEIEeuLhtUTICGHUA" label="BRS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69ylEIEeuLhtUTICGHUA" label="ACCESSION" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69y1EIEeuLhtUTICGHUA" label="PSLA" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69zFEIEeuLhtUTICGHUA" label="NOMBRE_STATIONNEMENTS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69zVEIEeuLhtUTICGHUA" label="NBRS_DE_COMMERCES_AUTRES" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69zlEIEeuLhtUTICGHUA" label="NBRS_AUTRES_LOCAUX_PRO" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI69z1EIEeuLhtUTICGHUA" label="COPROPRIETE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI690FEIEeuLhtUTICGHUA" label="DATE_D_AGREMENT" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI690VEIEeuLhtUTICGHUA" label="DATE_D_AGREMENT_ANRU" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI690lEIEeuLhtUTICGHUA" label="DATE_DEPOT_PERMIS_CONSTRUIRE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6901EIEeuLhtUTICGHUA" label="DATE_ORDRE_SERVICE_TRAVAUX" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI691FEIEeuLhtUTICGHUA" label="DATE_LIVRAISON_PREVISIONNELLE_INITIALE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI691VEIEeuLhtUTICGHUA" label="DATE_LIVRAISON_REELLE" length="100" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI691lEIEeuLhtUTICGHUA" label="COUT_TRAVAUX_HT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6911EIEeuLhtUTICGHUA" label="SHAB" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI692FEIEeuLhtUTICGHUA" label="SURFACE_UTILE" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI692VEIEeuLhtUTICGHUA" label="SDP_commerces_et_locaux_pro" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI692lEIEeuLhtUTICGHUA" label="PRIX_DE_REVIENT_PREVISIONNEL_LOCAUX_PRO_HT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6921EIEeuLhtUTICGHUA" label="PRIX_DE_REVIENT_PREVISIONNEL_HT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI693FEIEeuLhtUTICGHUA" label="PRIX_REVIENT_OPERATIONS_HT_REEL_HT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI693VEIEeuLhtUTICGHUA" label="TOTAL_PART_FINANCEMENT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI693lEIEeuLhtUTICGHUA" label="dont_PART_FOND_PROPRE" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6931EIEeuLhtUTICGHUA" label="dont_PART_SUBVENTION" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI694FEIEeuLhtUTICGHUA" label="dont_PART_PRET" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI694VEIEeuLhtUTICGHUA" label="MONTANT_PRET" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI694lEIEeuLhtUTICGHUA" label="TOTAL_CONTINGENT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6941EIEeuLhtUTICGHUA" label="RESERVATAIRE_ETAT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI695FEIEeuLhtUTICGHUA" label="VILLE_EPT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI695VEIEeuLhtUTICGHUA" label="CONTINGENT_PROPRIETAIRE" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI695lEIEeuLhtUTICGHUA" label="ACTION_LOGEMENT" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6951EIEeuLhtUTICGHUA" label="AUTRES" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI696FEIEeuLhtUTICGHUA" label="NOMBRE_T1_T2" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI696VEIEeuLhtUTICGHUA" label="NOMBRE_T3" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI696lEIEeuLhtUTICGHUA" label="NOMBRE_T4" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_WI6961EIEeuLhtUTICGHUA" label="NOMBRE_T5_ET_PLUS" length="10" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

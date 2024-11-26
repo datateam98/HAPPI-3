@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.relational="http:///orgomg/cwm/resource/relational.ecore">
+  <TalendMetadata:DatabaseConnection xmi:id="_tijCAHW7EequsMhDMjGncg" name="PROD" id="_7W_7QHW5EequsMhDMjGncg" label="PROD" dataPackage="_D25gYHW-Eeut-cnt2FO1IA" DatabaseType="AS400" DriverClass="com.ibm.as400.access.AS400JDBCDriver" URL="jdbc:as400://S4410625/ACGPROD;prompt=false" dbVersionString="AS400_V7R1_V7R3" Port="" Username="dkhuon" Password="enc:system.encryption.key.v1:OMEAC6RoE/oOzHH/AJj9CVE086rG0u+KibB6H4++HoT+2n39bw==" ServerName="S4410625" DatasourceName="" FileFieldName="" SID="ACGPROD" SqlSynthax="" StringQuote="" NullChar="" DbmsId="as400_id" ProductId="AS400" AdditionalParams="prompt=false" StandardSQL="true" SQLMode="false" UiSchema="ACGPROD">
+    <taggedValue xmi:id="_tijCAXW7EequsMhDMjGncg" tag="Is Conn Need Reload" value="true"/>
+    <taggedValue xmi:id="_tjGboHW7EequsMhDMjGncg" tag="package filter" value=""/>
+    <taggedValue xmi:id="_tjHCsHW7EequsMhDMjGncg" tag="Status" value=""/>
+    <taggedValue xmi:id="_tjHCsXW7EequsMhDMjGncg" tag="Version" value="0.1"/>
+    <taggedValue xmi:id="_tjHCsnW7EequsMhDMjGncg" tag="Purpose" value=""/>
+    <taggedValue xmi:id="_tjHCs3W7EequsMhDMjGncg" tag="Description" value=""/>
+    <taggedValue xmi:id="_tjHCtHW7EequsMhDMjGncg" tag="Author" value=""/>
+    <taggedValue xmi:id="_tjHCtXW7EequsMhDMjGncg" tag="otherParameter"/>
+    <taggedValue xmi:id="_ICSbQIMlEeqKU-bzaY3FDA" tag="DB ProductName" value="DB2 UDB for AS/400"/>
+    <taggedValue xmi:id="_ICTCUIMlEeqKU-bzaY3FDA" tag="DB ProductVersion" value="07.02.0000 V7R2m0"/>
+    <taggedValue xmi:id="_ICTCUYMlEeqKU-bzaY3FDA" tag="DB IdentifierQuoteString" value=""/>
+    <parameters xmi:id="_153dUIMkEeqKU-bzaY3FDA" key="CONN_PARA_KEY_USERNAME" value="dkhuon"/>
+    <parameters xmi:id="_aGQ2QIOiEeq2KOfbLwZ-iA" key="CONN_PARA_KEY_MAPRDB_TABLE_NS_MAPPING" value=""/>
+  </TalendMetadata:DatabaseConnection>
+  <orgomg.cwm.resource.relational:Schema xmi:id="_D25gYHW-Eeut-cnt2FO1IA" name="ACGPROD" dataManager="_tijCAHW7EequsMhDMjGncg"/>
+</xmi:XMI>

@@ -1,0 +1,1466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:8cxuLahzQR0enVDTYSgpFn7NU7C5SZsTJWN++yA+" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TOS_DI-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:we70Mbfd7Nmb8B8/3mb7y7kH1q+CN0ET246gcBP2" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_lIN4cE6gEeuHyZqmGv9rOw" name="DataOperation"/>
+    <routinesParameter id="_lIflQE6gEeuHyZqmGv9rOw" name="Mathematical"/>
+    <routinesParameter id="_lIvc4E6gEeuHyZqmGv9rOw" name="Numeric"/>
+    <routinesParameter id="_lI9fUE6gEeuHyZqmGv9rOw" name="Relational"/>
+    <routinesParameter id="_lJGCME6gEeuHyZqmGv9rOw" name="StringHandling"/>
+    <routinesParameter id="_lJV50E6gEeuHyZqmGv9rOw" name="TalendDataGenerator"/>
+    <routinesParameter id="_lJ6hkE6gEeuHyZqmGv9rOw" name="TalendDate"/>
+    <routinesParameter id="_lKS8EE6gEeuHyZqmGv9rOw" name="TalendStringUtil"/>
+    <routinesParameter id="_lKGHwE6gEeuHyZqmGv9rOw" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="320" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZF0QsIMEEeqKU-bzaY3FDA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ACGSQL01&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGINFO1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:82DoQYoztF/mIIqUuWqf7M41ebd0ZZGAit9rCVwb"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;instance=DECISIONNELLE&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="INFOCENTRE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:NYtKQcsGgp9AgE5SKmM2duencVwvCOZyfSbpE7vp" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;REQUETE_BASE&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;a.LB_SOCIETE as Gestionnaire, -- récupère le gestionnaire&#xD;&#xA;a.LB_SOCPROP as Propriétaire, -- remonte le propriétaire du patrimoine&#xD;&#xA;a.NO_AFFAIRE as num_affaire, -- valeur unique du numéro d'affaire&#xD;&#xA;LB_CODE2 as service_responsable, -- détermine qui a pris en charge la demande&#xD;&#xA;a.LB_ORIAFF as origine_affaire, -- récupère le type de contact à l'origine de l'affaire (Autre tiers, Client, Fournisseur, Service...)&#xD;&#xA;a.LB_TYPAFF as type_affaire, -- Récupère le type d'affaires (Administratif, Interne, technique, trouble du voisinage)&#xD;&#xA;CASE&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; -- Indique le motif de la demande&#xD;&#xA;&#x9;WHEN CD_QUALIF2 ='' then a.LB_QUALIF1&#xD;&#xA;&#x9;WHEN (CD_QUALIF2 is not null and CD_QUALIF2 not in (select CD_QUALAFF from Z_AF_QUALIF zaq)) then ('code technique : ' + CD_QUALIF2)&#xD;&#xA;&#x9;ELSE c.LB_QUALAFF  &#xD;&#xA;END as Motif,&#xD;&#xA;a.LB_ETAT_AF as etat_affaire, -- déterminer si l'affaire et en cours ou résolu&#xD;&#xA;a.LB_CONTACT as canal_contact, -- déterminer comment nous avons été contacté (Courrier, Espace locataire, Interne, etc...)&#xD;&#xA;a.CD_PATRIM as clef_patrimoine, -- déterminer quel patrimoine est en cause&#xD;&#xA;d.CD_PATRIM1,&#xD;&#xA;d.LB_PATRIM1,&#xD;&#xA;a.CD_LOCALI1,-- donne des précisions sur la localisation - servira à être croisé avec la TABLE : T_DEF_LOCALISATION&#xD;&#xA;a.SC_NOM_PER as collaborateur, -- détermine le collaborateur qui s'occupe de cette demande&#xD;&#xA;a.DT_CREAAFF as date_creation_affaire, --  remonte la date de création de l'affaire&#xD;&#xA;a.NBJJ_TRT_C as nbr_jour_resol_date_crea -- Nbre de jours résolution en lien avec date création&#xD;&#xA;FROM AFFAIRE a &#xD;&#xA;&#x9;left join ORGANISAT_GIM b on a.SC_CLE_HO = b.CD_HIERORG &#xD;&#xA;&#x9;left join Z_AF_QUALIF c on a.CD_QUALIF2 = c.CD_QUALAFF &#xD;&#xA;&#x9;-- left join @DTDP param ON a.CD_LOCALI1 = param.CD_LOCALI1&#xD;&#xA;&#x9;left join PATRIMOINE_GIM d on d.CD_PATRIM = a.CD_PATRIM&#xD;&#xA;where DT_CREAAFF >= dateadd(month,-18,getdate()) -- récupère les 2 dernières années d'historique&#xD;&#xA;and a.CD_SOCPROP in (1,6) -- récupère les affaires liés à haut de seine et hat de bièvre habitat&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="Gestionnaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Proprietaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="num_affaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="service_responsable"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origine_affaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_affaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Motif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="etat_affaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="canal_contact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="clef_patrimoine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_PATRIM1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LB_PATRIM1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="collaborateur"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="date_creation_affaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="nbr_jour_resol"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" key="false" length="100" name="Gestionnaire" nullable="true" pattern="&quot;yyyy-MM&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Proprietaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="num_affaire" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="service_responsable" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="null" key="false" length="100" name="Origine_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Motif" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="etat_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="canal_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="clef_patrimoine" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CD_PATRIM1" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="LB_PATRIM1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="CD_LOCALI1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="date_creation_affaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATE" type="id_Date" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="nbr_jour_resol" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="INT" type="id_Integer" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="448" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MIs-gIcuEeyFIo0rzH0vVQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" key="false" length="10" name="Gestionnaire" nullable="true" pattern="&quot;yyyy-MM&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Proprietaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="num_affaire" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="service_responsable" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="null" key="false" length="100" name="Origine_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Motif" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="etat_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="canal_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="clef_patrimoine" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="date_creation_affaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="nbr_jour_resol" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="100" name="DP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="VILLE" expression="row2.VILLE != null ?&#xD;&#xA;&#x9;(row2.VILLE.equals(&quot;SURESNES&quot;) ?&#xD;&#xA;&#x9;&#x9;(row1.CD_PATRIM1 == 3023 &#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3800&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3804&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3801&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3802&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3806&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3024&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3025&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3701&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3027&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 11013&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 11022&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3803 &#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3700&#xD;&#xA;&#x9;&#x9;|| row1.CD_PATRIM1 == 3026 &#xD;&#xA;&#x9;&#x9;? &quot;ANTENNE SURESNES&quot; : &quot;SURESNES (HORS ANTENNE)&quot; ) &#xD;&#xA;&#x9;: row2.VILLE) : &quot;-&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="Gestionnaire" expression="row1.Gestionnaire " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Proprietaire" expression="row1.Proprietaire " type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_affaire" expression="row1.num_affaire " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="service_responsable" expression="row1.service_responsable " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Origine_affaire" expression="row1.Origine_affaire " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_affaire" expression="row1.type_affaire " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Motif" expression="row1.Motif " type="id_String" nullable="true"/>
+        <mapperTableEntries name="etat_affaire" expression="row1.etat_affaire " type="id_String" nullable="true"/>
+        <mapperTableEntries name="canal_contact" expression="row1.canal_contact " type="id_String" nullable="true"/>
+        <mapperTableEntries name="clef_patrimoine" expression="row1.clef_patrimoine " type="id_String" nullable="true"/>
+        <mapperTableEntries name="date_creation_affaire" expression="row1.date_creation_affaire " type="id_Date" nullable="true"/>
+        <mapperTableEntries name="nbr_jour_resol" expression="row1.nbr_jour_resol " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="collaborateur" expression="row1.collaborateur " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VILLE" expression="Var.VILLE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" expression="&quot;DP &quot; + row2.DP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT" expression="row2.DT " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="Gestionnaire" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Proprietaire" type="id_String" nullable="true"/>
+        <mapperTableEntries name="num_affaire" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="service_responsable" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Origine_affaire" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_affaire" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Motif" type="id_String" nullable="true"/>
+        <mapperTableEntries name="etat_affaire" type="id_String" nullable="true"/>
+        <mapperTableEntries name="canal_contact" type="id_String" nullable="true"/>
+        <mapperTableEntries name="clef_patrimoine" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CD_PATRIM1" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="LB_PATRIM1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CD_LOCALI1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="collaborateur" type="id_String" nullable="true"/>
+        <mapperTableEntries name="date_creation_affaire" type="id_Date" nullable="true"/>
+        <mapperTableEntries name="nbr_jour_resol" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CD_LOCALI1" expression="row1.CD_LOCALI1 " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="VILLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="192" posY="320">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Vit_EHWrEequsMhDMjGncg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRVTOU01&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HDSHData&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:kLvhBpKjeDadB1te+4+iG8ngEZIl/fq/GFJ6F+5P"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:SCHEMA_TYPE" value="REPOSITORY" show="false"/>
+    <elementParameter field="TECHNICAL" name="SCHEMA:REPOSITORY_SCHEMA_TYPE" value="_Vit_EHWrEequsMhDMjGncg - T_DEF_LOCALISATION" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;T_DEF_LOCALISATION&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT T_DEF_LOCALISATION.CD_LOCALI1,&#xA;&#x9;&#x9;T_DEF_LOCALISATION.VILLE,&#xA;&#x9;&#x9;T_DEF_LOCALISATION.DP,&#xA;&#x9;&#x9;T_DEF_LOCALISATION.DT&#xA;FROM&#x9;T_DEF_LOCALISATION&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="T_DEF_LOCALISATION" name="tDBInput_1">
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="CD_LOCALI1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_1" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory/Satisfactory_ARAVIS.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="10" name="Gestionnaire" nullable="true" pattern="&quot;yyyy-MM&quot;" precision="-1" sourceType="DATE" type="id_String" originalLength="10" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Proprietaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="num_affaire" nullable="true" pattern="" precision="-1" sourceType="" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="service_responsable" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="null" key="false" length="100" name="Origine_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Motif" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="etat_affaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="canal_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="clef_patrimoine" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="date_creation_affaire" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_Date" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="nbr_jour_resol" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="VILLE" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="100" name="DP" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="100" name="DT" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="160" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tjhmYIhnEeqe850T4QdN1w" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hauts-de-seine-habitat&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:IelSSPTFdbchf3njNSzQS6JSeNAhadkZ1ROwC2MdCmSH55d3E1Dti5hhbxB9bhAJgPtRsQ4x15+IbkftEIE="/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:S3PKdGM/IihiRsCtUnbOzwYNon29+qrG/GXo10kGvq1+9g=="/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:Y+9TPwJR45ycY5YUMUd51HBiFWYq5fpCSe1Thw0/" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:varuNV8wPuDVitj1L8crlyzwCw8Z9fiDVQ3TYmY+" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hauts-de-seine-habitat&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Ra/msUnS500hJtD3kaOAEEWrt/D7XdY/oqrW0QDLfLT6oR5+2PS+i5UWBR0hVTrDVE7QR61UL3vZIflWnnc9pXMYvcWAYEI=" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:I7+RXZGQwfbQYOqaz+/5+nBpin9A2gYh8fLU0Gwf" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;./Satisfactory&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:9fZrtADb2M0rBZpzOvvwolVnI1slnKKYGz9kwb20apHixw==" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never" show="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;Satisfactory_ARAVIS.csv&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:NRSNaYm7eX4Jilt8o+Xt0ezKK1y9ipucnCzbJ1ur" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="outsoc" name="tFTPPut_1">
+      <column comment="" key="false" length="100" name="SocieteProprietaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateTri" nullable="true" pattern="&quot;yyyy-MM&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_ALIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="TypeLocalisation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Localisation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Montant" nullable="true" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Nature" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotifVac" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Parent" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ParentType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Parent2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ParentType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Facturable" nullable="true" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="704" posY="416">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tjhmYIhnEeqe850T4QdN1w" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hauts-de-seine-habitat&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:VtCwrrg/nQcNvGLNzD4y20ZU7pi3WSzdkR6PitKAI52j9BXo31OeaB2ro0J20+go15QEfJOZCkkSAMyhd1M="/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:6O1b8qETM7xYutwTPxGa5S9+9nrJrmEHlx1qVAHqQ1sU4g=="/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:DgmmAnex7ce4Hva9B5vSXKc3pC7MkciKxUvfrs+j" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:+QAuRSXOCF6WT3bwf+oSL7+i+zFVG1QLe/5Mh50u" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_2"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:+COlQHAtcIYdCKHceZ9nizGu1ygVJfrzrFbj6S4BLISbT4iZ7VVy" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:IdNJZKL7C6ax3R+K/T5M9Ass+jR1Rm5Iy1J3aGZwl9Wydw9p" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;./Satisfactory&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:wz05Z2JBEmL4RnzXpgX7hvV06tHeOsq9IwFMJfVQJwFhyCTH" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never" show="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;Satisfactory_ACD.csv&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:7waWwwR2qvGFCWjL8q06noRYladZIbowyXh5AITg" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPPut_2"/>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_2" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_2"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tInformixInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_BDiCoPdTEeqx8IrRgK3QMA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;h92acd01&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9088&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="INFORMIX" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;hppcdb&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;informix&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5Z6imlx0vEoYWUP+vFPZZSR490m/TlTFw6ZbPSjheA4XmdF7hB0Z6iYF"/>
+    <elementParameter field="TEXT" name="DBSERVER" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select --a.callid,&#xD;&#xA;mydate, calltypename,  type_unique, equipe, count(*) as NB &#xD;&#xA;from&#xD;&#xA;(&#xD;&#xA;select distinct&#xD;&#xA;RTRIM(LTRIM(a.callid)) as callid,&#xD;&#xA;mydate, -- début de l'appel en AA - MM - DD&#xD;&#xA;a.calltypename,&#xD;&#xA;case &#xD;&#xA;&#x9;when (a.waitresolution = 1 and e.termtype not in (1, 2, 3, 4, 30, 35)) then 'Répondu'&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) then 'Abandonné par appelant'&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30)) then 'Manqué suite indisponibilité'&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end type, --  détermine si l'appel a été répondu, abandonné, redirigé ou autres...&#xD;&#xA;case &#xD;&#xA;&#x9;when exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid abandonné mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant' -- callid abandonné uniquement&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid indispo mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) then 'Abandonné par appelant' -- callid indispo mixé avec un appel abandonné&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) -- existe pas en répondu&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) -- existe pas en abandonné par appelant&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Manqué suite indisponibilité' -- callid indispo&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end as type_unique, &#xD;&#xA;1 as NB, -- effectue un compte (ça mange pas de pain :) )&#xD;&#xA;case &#xD;&#xA;&#x9;when e.departmentkey = 16 then 'EQUIPE_SAT'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) and upper(a.calltypename) like'%SATISFACTORY%' then 'EQUIPE_SAT'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid and departmentkey = 16) and upper(a.calltypename) like'%SATISFACTORY%' then 'Autres' -- appel émis vers satsifactory mais seul les agents DP ont répondu&#xD;&#xA;&#x9;else 'EQUIPE_NOT_SAT'&#xD;&#xA;&#x9;end as equipe&#xD;&#xA;from &#xD;&#xA;(&#xD;&#xA;select  &#xD;&#xA;TO_CHAR (a.callstart, '%Y-%m-%d') as mydate,&#xD;&#xA;a.callstart,&#xD;&#xA;b.calltypename, -- indique la file d'appelle sélectionnée&#xD;&#xA;waitresolution,&#xD;&#xA;a.contacttype, a.callid, assignedagent, a.termtype, a.origin, a.origdestination--, a.callstart&#xD;&#xA;from informix.callrecord a  left join informix.calltypes b on a.calltypekey = b.calltypekey&#xD;&#xA;where a.callstart  > add_months(a.callstart, -18)  &#x9;&#x9;  -- récupère un historique de 2 ans&#xD;&#xA;and upper(b.calltypename) like '%SATISFACTORY%'&#x9;      -- uniquement si cet appel concerne l'équipe Satisfactory&#xD;&#xA;) a &#xD;&#xA;left join&#xD;&#xA;&#x9;(select distinct callid, ringstart, requeuecount, sequencenumber, contactstarttime, termtype, agentkey, userlastname, teamname as equipe, tothandlingtime, departmentkey, totpostprocessingtime&#xD;&#xA;&#x9; from agentrecord e left join users d on d.userkey = e.agentkey left join teams x on x.teamkey = e.departmentkey  &#xD;&#xA;&#x9; ) e on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(e.callid)) and a.callstart = e.contactstarttime&#xD;&#xA;left join &#xD;&#xA;&#x9;(select distinct callid, wrapupname, agentkey, sequencenumber, requeuecount&#xD;&#xA;&#x9;from  wrapupreason b left join wrapupreasons c on b.reasonkey = c.wrapupreasonkey&#xD;&#xA;&#x9;) b on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(b.callid)) and b.agentkey  = e.agentkey and  e.sequencenumber = b.sequencenumber and e.requeuecount = b.requeuecount&#xD;&#xA;where exists  (select 1 from agentrecord v where v.callid = a.callid and v.departmentkey = 16) -- le callid doit être traité par au moins un membre de l'équipe Satisfactory&#xD;&#xA;      or not exists (select 1 from agentrecord v where v.callid = a.callid) -- Remonte les appels qui ont été émis vers la satisfactory et traité par aucun agent (ni DP ni SAT) ; considéré comme un appel abandonné&#xD;&#xA;group by a.callid, mydate, a.calltypename, type, type_unique, equipe, a.origin, a.origdestination, e.departmentkey&#xD;&#xA;) a &#xD;&#xA;group by -- a.callid,&#xD;&#xA;mydate, calltypename, type_unique, equipe&#xD;&#xA;UNION&#xD;&#xA;select --a.callid,&#xD;&#xA;mydate, calltypename,  type_unique, equipe, count(*) as NB &#xD;&#xA;from&#xD;&#xA;(&#xD;&#xA;select distinct&#xD;&#xA;RTRIM(LTRIM(a.callid)) as callid,&#xD;&#xA;mydate, -- début de l'appel en AA - MM - DD&#xD;&#xA;a.calltypename,&#xD;&#xA;case &#xD;&#xA;&#x9;when (a.waitresolution = 1 and e.termtype not in (1, 2, 3, 4, 30, 35)) then 'Répondu'&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) then 'Abandonné par appelant'&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30)) then 'Manqué suite indisponibilité'&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end type, --  détermine si l'appel a été répondu, abandonné, redirigé ou autres...&#xD;&#xA;case &#xD;&#xA;&#x9;when exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid abandonné mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant' -- callid abandonné uniquement&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid indispo mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) then 'Abandonné par appelant' -- callid indispo mixé avec un appel abandonné&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) -- existe pas en répondu&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) -- existe pas en abandonné par appelant&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Manqué suite indisponibilité' -- callid indispo&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end as type_unique, &#xD;&#xA;1 as NB, -- effectue un compte (ça mange pas de pain :) )&#xD;&#xA;case &#xD;&#xA;&#x9;when e.departmentkey = 16 then 'EQUIPE_SAT'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) and upper(a.calltypename) like'%SATISFACTORY%' then 'EQUIPE_SAT'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid and departmentkey = 16) and upper(a.calltypename) like'%SATISFACTORY%' then 'Autres' -- appel émis vers satsifactory mais seul les agents DP ont répondu&#xD;&#xA;&#x9;else 'EQUIPE_NOT_SAT'&#xD;&#xA;&#x9;end as equipe&#xD;&#xA;from &#xD;&#xA;(&#xD;&#xA;select  &#xD;&#xA;TO_CHAR (a.callstart, '%Y-%m-%d') as mydate,&#xD;&#xA;a.callstart,&#xD;&#xA;b.calltypename, -- indique la file d'appelle sélectionnée&#xD;&#xA;waitresolution,&#xD;&#xA;a.contacttype, a.callid, assignedagent, a.termtype, a.origin, a.origdestination--, a.callstart&#xD;&#xA;from informix.callrecord a  left join informix.calltypes b on a.calltypekey = b.calltypekey&#xD;&#xA;where a.callstart  > add_months(a.callstart, -18)  &#x9;&#x9;  -- récupère un historique de 2 ans&#xD;&#xA;and upper(b.calltypename) not like '%SATISFACTORY%' -- retire les files satisfactory&#xD;&#xA;and upper(b.calltypename) not like '%APPEL-DSI%' -- DSI&#xD;&#xA;and upper(b.calltypename) not like '%45998%' -- retire une file spécifique&#xD;&#xA;and upper(b.calltypename) not like '%DEFAULT%' -- retire la file defaut&#xD;&#xA;) a &#xD;&#xA;left join&#xD;&#xA;&#x9;(select distinct callid, ringstart, requeuecount, sequencenumber, contactstarttime, termtype, agentkey, userlastname, teamname as equipe, tothandlingtime, departmentkey, totpostprocessingtime&#xD;&#xA;&#x9; from agentrecord e left join users d on d.userkey = e.agentkey left join teams x on x.teamkey = e.departmentkey  &#xD;&#xA;&#x9; ) e on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(e.callid)) and a.callstart = e.contactstarttime&#xD;&#xA;left join &#xD;&#xA;&#x9;(select distinct callid, wrapupname, agentkey, sequencenumber, requeuecount&#xD;&#xA;&#x9;from  wrapupreason b left join wrapupreasons c on b.reasonkey = c.wrapupreasonkey&#xD;&#xA;&#x9;) b on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(b.callid)) and b.agentkey  = e.agentkey and  e.sequencenumber = b.sequencenumber and e.requeuecount = b.requeuecount&#xD;&#xA;where not exists (select 1 from agentrecord v where v.callid = a.callid and v.departmentkey = 16) &#xD;&#xA;group by a.callid, mydate, a.calltypename, type, type_unique, equipe, a.origin, a.origdestination, e.departmentkey&#xD;&#xA;) a &#xD;&#xA;group by --a.callid,&#xD;&#xA;mydate, calltypename, type_unique, equipe&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="informix_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="mydate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calltypename"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="equipe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ACD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_4">
+      <column comment="" key="false" length="-1" name="mydate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type_unique" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1152" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MIs-gIcuEeyFIo0rzH0vVQ-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out2">
+      <column comment="" key="false" length="-1" name="mydate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out2">
+        <mapperTableEntries name="mydate" expression="row4.mydate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="calltypename" expression="row4.calltypename " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" expression="row4.type_unique " type="id_String" nullable="true"/>
+        <mapperTableEntries name="equipe" expression="row4.equipe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NB" expression="row4.NB " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Origine" expression="row5.Origine " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" expression="row5.DP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_LIGNE" expression="row5.TYPE_LIGNE " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row4" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="mydate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="calltypename" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_unique" type="id_String" nullable="true"/>
+        <mapperTableEntries name="equipe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NB" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row5" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="calltypename" expression="row4.calltypename " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="Origine" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_LIGNE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="512">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_5" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Vit_EHWrEequsMhDMjGncg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRVTOU01&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HDSHData&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:g80Mp04S4NMkTcFVOz5SISmhd+dm+tf4AnuShepT"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;T_DEF_LIGNE_SATISFACTORY&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;calltypename,&#xD;&#xA;Origine,&#xD;&#xA;DP,&#xD;&#xA;TYPE_LIGNE&#xD;&#xA; FROM T_DEF_LIGNE_SATISFACTORY&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="calltypename"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_LIGNE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="T_DEF_LOCALISATION" name="tDBInput_5">
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="calltypename" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="448">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_3" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory/Satisfactory_ACD_comptage.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_3">
+      <column comment="" key="false" length="-1" name="mydate" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="896" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tjhmYIhnEeqe850T4QdN1w" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hauts-de-seine-habitat&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:UDyyMk7BaD3PkWG+qO1UVjQ+4EARVlXlnZIfTE0fxnPkSagFFYnudXHQQXAWTo+T5/bFhAIv6CMDxiPJnus="/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:AQLuKVUg8lfC/su5Qot4izfq8WPgTKkQuPnd/mYT7BlSdw=="/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:20S7ZCaK5tA1dvnC2A+9PqkvYIw6CJ8kWex+N24Y" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:U4Ydt62OyYwsUpL+V4Q20X5hJrdrSiCNFSqG5R6Q" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_3" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_3"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;localhost&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="21" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;anonymous&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Aei9t+lEz3WssRo+EIKFb4HhTcZKyAQXxC2rYdbydQNrJLDODNCK" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:sel/BGLDebMAS7J6rX0yGEj4b0JaE+YKSZFkzbdywjBfQqeb" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;./Satisfactory&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="false"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:le9NMbLCmxUo/GBMWZwHw7PRzIbbs68cKv5DemXnY4L6+OTf" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never" show="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;Satisfactory_ACD_comptage.csv&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;61.163.92.4&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;1080&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:7WS8WUqOgZ5wSX7SeoON4aSKoYdifFWfn6+hZ4Ql" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFTPPut_3"/>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="1344" posY="608">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_3" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_3"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tInformixInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_BDiCoPdTEeqx8IrRgK3QMA" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;h92acd01&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;9088&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="INFORMIX" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;hppcdb&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;informix&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:ltN7or8MVOLO/SEGIHiwjCZpUMddVAKtYFqXvlPQm7j9u20X6GrxsxR3"/>
+    <elementParameter field="TEXT" name="DBSERVER" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select distinct&#xD;&#xA;RTRIM(LTRIM(a.callid)) as callid,&#xD;&#xA;a.origin,&#xD;&#xA;a.origdestination,&#xD;&#xA;mydate, -- début de l'appel en AA - MM - DD&#xD;&#xA;e.ringstart as mydatefiltre,&#xD;&#xA;case &#xD;&#xA;&#x9;-- permet de savoir si pour un callid l'appel a été reçu par au moins un opérateur de la cellule Satisfactory&#xD;&#xA;&#x9;when e.departmentkey = 16 then a.calltypename -- Si le nom de la file est uniquement Satisfactory alors chercher le détail en callrecord&#xD;&#xA;&#x9;when e.departmentkey = 7 then 'Appel-Bois-Colombes'&#xD;&#xA;&#x9;when e.departmentkey = 2 then 'Appel-Suresnes_Carnot'&#xD;&#xA;&#x9;when e.departmentkey = 3 then 'Appel-Suresnes_Antenne'&#xD;&#xA;&#x9;when e.departmentkey = 11 then 'Appel-Plessis-Robinson'&#xD;&#xA;&#x9;when e.departmentkey = 4 then 'Appel-Chaville_Antenne'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then a.calltypename -- quand l'appel est abandonné chercher la file dans callrecord&#xD;&#xA;&#x9;else trim(e.equipe) -- sinon prendre le nom de la file dans la agentrecord&#xD;&#xA;end as calltypename,&#xD;&#xA;case &#xD;&#xA;&#x9;when (a.waitresolution = 1 and e.termtype not in (1, 2, 3, 4, 30, 35)) then 'Répondu'&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) then 'Abandonné par appelant'&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30)) then 'Manqué suite indisponibilité'&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end as type, --  détermine si l'appel a été répondu, abandonné, redirigé ou autres...&#xD;&#xA;case &#xD;&#xA;&#x9;when exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid abandonné mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid)&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant' -- callid abandonné uniquement&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) then 'Répondu' -- callid indispo mixé avec un appel répondu&#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) then 'Abandonné par appelant' -- callid indispo mixé avec un appel abandonné&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9; &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  &#xD;&#xA;&#x9;when (a.waitresolution = 3 or e.termtype in (30))  and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where x.waitresolution = 1 and y.termtype not in (1, 2, 3, 4, 30, 35) and x.callid = a.callid) -- existe pas en répondu&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and not exists (select 1 from callrecord x left join callrecord y on x.callid = y.callid&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;  where (a.waitresolution = 2 or e.termtype in (1, 2, 3, 4, 35)) and x.callid = a.callid) -- existe pas en abandonné par appelant&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;   and exists (select 1 from agentrecord v where v.callid = a.callid) then 'Manqué suite indisponibilité' -- callid indispo&#xD;&#xA;&#x9;when a.waitresolution = 4 then 'Sortant'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné par appelant'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end as type_unique, --  détermine si l'appel a été répondu, abandonné, redirigé ou autres...&#xD;&#xA;case  -- détermine si l'appel est acheminé, direct, rappel, email etc... permet notamment de récupérer les appels sortants comme spécifié dans la demande&#xD;&#xA;&#x9;when a.contacttype ='0' then 'Aucune ContactType'&#xD;&#xA;&#x9;when a.contacttype ='1' then 'Appel acheminé'&#xD;&#xA;&#x9;when a.contacttype ='2' then 'Appel direct entrant'&#xD;&#xA;&#x9;when a.contacttype ='3' then 'Appel direct sortant'&#xD;&#xA;&#x9;when a.contacttype ='4' then 'Appel direct interne'&#xD;&#xA;&#x9;when a.contacttype ='5' then 'Rappel acheminé'&#xD;&#xA;&#x9;when a.contacttype ='6' then 'Message email acheminé'&#xD;&#xA;&#x9;when a.contacttype ='7' then 'Message email direct sortant'&#xD;&#xA;&#x9;when a.contacttype ='8' then 'Contact collaboration Web acheminé'&#xD;&#xA;&#x9;when a.contacttype ='9' then 'Appel inconnu (direct ou acheminé)'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;end as Type_contact,&#xD;&#xA;e.termtype,&#xD;&#xA;case &#xD;&#xA;&#x9;when e.termtype ='0' then 'Pas de terme type'&#xD;&#xA;&#x9;when e.termtype = '1' then 'Abandonné'&#xD;&#xA;&#x9;when e.termtype = '2' then 'Abandonné'&#xD;&#xA;&#x9;when e.termtype = '3' then 'Abandonné'&#xD;&#xA;&#x9;when e.termtype ='4' then 'Abandonnée'&#xD;&#xA;&#x9;when e.termtype ='5' then 'Déconnecté lors attente de consultation'&#xD;&#xA;&#x9;when e.termtype = '6' then 'déconnecté lors du parque'&#xD;&#xA;&#x9;when e.termtype = '7' then 'Mise en file attente'&#xD;&#xA;&#x9;when e.termtype = '8' then 'network reached'&#xD;&#xA;&#x9;when e.termtype = '9' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '10' then 'time out'&#xD;&#xA;&#x9;when e.termtype = '11' then 'déconnecté durant attente'&#xD;&#xA;&#x9;when e.termtype = '12' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '13' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '14' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '15' then 'Rappeler plus tard'&#xD;&#xA;&#x9;when e.termtype = '16' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '17' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '18' then 'Déconnecté'&#xD;&#xA;&#x9;when e.termtype = '19' then 'Non géré'&#xD;&#xA;&#x9;when e.termtype = '20' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '21' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '22' then 'Répondu'&#xD;&#xA;&#x9;when e.termtype = '23' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '24' then 'Renvoi vers call type ?'&#xD;&#xA;&#x9;when e.termtype = '25' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '26' then 'planifier rappel'&#xD;&#xA;&#x9;when e.termtype = '27' then 'Résolu'&#xD;&#xA;&#x9;when e.termtype = '28' then 'Reçu mais non résolu'&#xD;&#xA;&#x9;when e.termtype = '29' then 'Indisponible'&#xD;&#xA;&#x9;when e.termtype = '30' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '31' then 'Réponse de du collab'&#xD;&#xA;&#x9;when e.termtype = '32' then 'Réponse automatique'&#xD;&#xA;&#x9;when e.termtype = '33' then 'Différé la réponse'&#xD;&#xA;&#x9;when e.termtype = '34' then 'Réponse automatique'&#xD;&#xA;&#x9;when e.termtype = '35' then 'Abandonné durant la file attente'&#xD;&#xA;&#x9;when e.termtype = '36' then 'Transféré'&#xD;&#xA;&#x9;when e.termtype = '37' then 'Email externe suite retour'&#xD;&#xA;&#x9;when e.termtype = '38' then 'Expiration du délai attente'&#xD;&#xA;&#x9;when e.termtype = '39' then 'Non géré'&#xD;&#xA;&#x9;when e.termtype = '40' then 'Manager retiré'&#xD;&#xA;&#x9;when e.termtype = '41' then 'Collab retiré'&#xD;&#xA;&#x9;when e.termtype = '42' then 'Manager retiré'&#xD;&#xA;&#x9;when e.termtype = '43' then 'Email annulé'&#xD;&#xA;&#x9;when e.termtype = '44' then 'IVR Deleted'&#xD;&#xA;&#x9;when e.termtype = '45' then 'Redirigié cause mauvais service'&#xD;&#xA;&#x9;when e.termtype = '46' then 'Non géré'&#xD;&#xA;&#x9;when e.termtype = '47' then 'Time out'&#xD;&#xA;&#x9;when e.termtype = '48' then 'Non transmis'&#xD;&#xA;&#x9;when e.termtype = '-1' then 'arrêt système'&#xD;&#xA;&#x9;when e.termtype = '-2' then 'arrêt système'&#x9;&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) then 'Abandonné'&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;&#x9;end as terme_comm,&#xD;&#xA;1 as NB, -- effectue un compte (ça mange pas de pain :) )&#xD;&#xA;e.userlastname as collaborateur, -- clef unique concernant l'agent&#xD;&#xA;wrapupname as motif_contact,-- motif de contact&#xD;&#xA;assignedagent,&#xD;&#xA;case &#xD;&#xA;&#x9;when e.departmentkey = 16 then 'EQUIPE_SAT'&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid) and upper(a.calltypename) like'%SATISFACTORY%' then 'EQUIPE_SAT' -- appel émis vers satsifactory mais aucun n'agent n'a répondu&#xD;&#xA;&#x9;when not exists (select 1 from agentrecord v where v.callid = a.callid and departmentkey = 16) and upper(a.calltypename) like'%SATISFACTORY%' then 'Autres' -- appel émis vers satsifactory mais seul les agents DP ont répondu&#xD;&#xA;&#x9;else 'Autres'&#xD;&#xA;&#x9;end as equipe,&#xD;&#xA;e.tothandlingtime as duree_appel,&#xD;&#xA;e.totpostprocessingtime as duree_post_trait,&#xD;&#xA;e.tothandlingtime + e.totpostprocessingtime as duree_total_traitement&#xD;&#xA;from &#xD;&#xA;(&#xD;&#xA;select  &#xD;&#xA;TO_CHAR (a.callstart, '%Y-%m-%d') as mydate,&#xD;&#xA;a.callstart,&#xD;&#xA;b.calltypename, -- indique la file d'appelle sélectionnée&#xD;&#xA;waitresolution,&#xD;&#xA;a.contacttype, a.callid, assignedagent, a.termtype, a.origin, a.origdestination--, a.callstart&#xD;&#xA;from informix.callrecord a  left join informix.calltypes b on a.calltypekey = b.calltypekey&#xD;&#xA;where a.callstart  > add_months(a.callstart, -18)  &#x9;&#x9;  -- récupère un historique de 2 ans&#xD;&#xA;and upper(b.calltypename) like '%SATISFACTORY%'&#x9;      -- uniquement si cet appel concerne l'équipe Satisfactory&#xD;&#xA;UNION&#x9;&#xD;&#xA;select  &#xD;&#xA;TO_CHAR(a.callstart, '%Y-%m-%d') as mydate,&#xD;&#xA;a.callstart,&#xD;&#xA;b.calltypename, -- indique la file d'appelle sélectionnée&#xD;&#xA;4 as waitresolution,&#xD;&#xA;a.contacttype, a.callid, assignedagent, a.termtype, a.origin, a.origdestination--, a.callstart&#xD;&#xA;from informix.callrecord a  left join informix.calltypes b on a.calltypekey = b.calltypekey&#xD;&#xA;where a.callstart  > add_months(a.callstart, -18)  &#x9;&#x9;  -- récupère un historique de 2 ans&#xD;&#xA;--and upper(b.calltypename) like '%SATISFACTORY%'&#x9;      -- uniquement si cet appel concerne l'équipe Satisfactory&#xD;&#xA;and a.contacttype ='3'&#xD;&#xA;and a.callid in (select c.callid  from agentrecord c where departmentkey ='16')&#xD;&#xA;) a &#xD;&#xA;left join&#xD;&#xA;&#x9;(select distinct callid, ringstart, requeuecount, sequencenumber, contactstarttime, termtype, agentkey, userlastname, teamname as equipe, tothandlingtime, departmentkey, totpostprocessingtime&#xD;&#xA;&#x9; from agentrecord e left join users d on d.userkey = e.agentkey left join teams x on x.teamkey = e.departmentkey  &#xD;&#xA;&#x9; ) e on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(e.callid)) and a.callstart = e.contactstarttime&#xD;&#xA;left join &#xD;&#xA;&#x9;(select distinct callid, wrapupname, agentkey, sequencenumber, requeuecount&#xD;&#xA;&#x9;from  wrapupreason b left join wrapupreasons c on b.reasonkey = c.wrapupreasonkey&#xD;&#xA;&#x9;) b on RTRIM(LTRIM(a.callid)) = RTRIM(LTRIM(b.callid)) and b.agentkey  = e.agentkey and  e.sequencenumber = b.sequencenumber and e.requeuecount = b.requeuecount&#xD;&#xA;group by a.callid, mydate, mydatefiltre,e.departmentkey, calltypename, type, type_unique, Type_contact, e.userlastname, wrapupname, assignedagent, equipe, e.termtype, a.origin, a.origdestination, terme_comm, duree_appel, duree_post_trait, duree_total_traitement&#xD;&#xA;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="informix_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="callid"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origin"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="origdestination"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mydate"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="mydatefiltre"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="calltypename"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Type_contact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="termtype"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="terme_comm"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NB"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="collaborateur"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="motif_contact"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="assignedagent"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Equipe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duree_appel"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duree_post_trait"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="duree_total_traitement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="ACD"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_3">
+      <column comment="" key="false" length="100" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origin" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origdestination" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydatefiltre" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type_unique" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Type_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termtype" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="terme_comm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="motif_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="assignedagent" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_appel" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_post_trait" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_total_traitement" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_3" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_MIs-gIcuEeyFIo0rzH0vVQ-tMap_3-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout2">
+      <column comment="" key="false" length="100" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origin" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origdestination" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydatefiltre" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type_unique" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Type_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termtype" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="terme_comm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="motif_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="assignedagent" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_appel" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_post_trait" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_total_traitement" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout2">
+        <mapperTableEntries name="callid" expression="row3.callid " type="id_String" nullable="true"/>
+        <mapperTableEntries name="origin" expression="row3.origin " type="id_String" nullable="true"/>
+        <mapperTableEntries name="origdestination" expression="row3.origdestination " type="id_String" nullable="true"/>
+        <mapperTableEntries name="mydate" expression="row3.mydate " type="id_String" nullable="true"/>
+        <mapperTableEntries name="mydatefiltre" expression="row3.mydatefiltre " type="id_String" nullable="true"/>
+        <mapperTableEntries name="calltypename" expression="row3.calltypename " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" expression="row3.type " type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_unique" expression="row3.type_unique " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Type_contact" expression="row3.Type_contact " type="id_String" nullable="true"/>
+        <mapperTableEntries name="termtype" expression="row3.termtype " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="terme_comm" expression="row3.terme_comm " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NB" expression="row3.NB " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="collaborateur" expression="row3.collaborateur " type="id_String" nullable="true"/>
+        <mapperTableEntries name="motif_contact" expression="row3.motif_contact " type="id_String" nullable="true"/>
+        <mapperTableEntries name="assignedagent" expression="row3.assignedagent " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Equipe" expression="row3.Equipe " type="id_String" nullable="true"/>
+        <mapperTableEntries name="duree_appel" expression="row3.duree_appel " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="duree_post_trait" expression="row3.duree_post_trait " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="duree_total_traitement" expression="row3.duree_total_traitement " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Origine" expression="row6.Origine " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" expression="row6.DP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_LIGNE" expression="row6.TYPE_LIGNE " type="id_String" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row3" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="callid" type="id_String" nullable="true"/>
+        <mapperTableEntries name="origin" type="id_String" nullable="true"/>
+        <mapperTableEntries name="origdestination" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mydate" type="id_String" nullable="true"/>
+        <mapperTableEntries name="mydatefiltre" type="id_String" nullable="true"/>
+        <mapperTableEntries name="calltypename" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type" type="id_String" nullable="true"/>
+        <mapperTableEntries name="type_unique" type="id_String" nullable="true"/>
+        <mapperTableEntries name="Type_contact" type="id_String" nullable="true"/>
+        <mapperTableEntries name="termtype" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="terme_comm" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NB" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="collaborateur" type="id_String" nullable="true"/>
+        <mapperTableEntries name="motif_contact" type="id_String" nullable="true"/>
+        <mapperTableEntries name="assignedagent" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Equipe" type="id_String" nullable="true"/>
+        <mapperTableEntries name="duree_appel" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="duree_post_trait" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="duree_total_traitement" type="id_Integer" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row6" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="calltypename" expression="row3.calltypename " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="Origine" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_LIGNE" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="928" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_6" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Vit_EHWrEequsMhDMjGncg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRVTOU01&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HDSHData&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:BhR8mw6YdnT9U6E/7PqyMDiHr5brzRqXoMRsbRG9"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;T_DEF_LIGNE_SATISFACTORY&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT&#xD;&#xA;calltypename,&#xD;&#xA;Origine,&#xD;&#xA;DP,&#xD;&#xA;TYPE_LIGNE&#xD;&#xA; FROM T_DEF_LIGNE_SATISFACTORY&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="calltypename"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Origine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_LIGNE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="__TABLE__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="T_DEF_LOCALISATION" name="tDBInput_6">
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="calltypename" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1312" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_2" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/satisfactory/Satisfactory_ACD.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="true"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="100" name="callid" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origin" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="origdestination" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydate" nullable="true" pattern="&quot;yyyy-MM-dd&quot;" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="mydatefiltre" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="calltypename" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="type_unique" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Type_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="termtype" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="terme_comm" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="NB" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="collaborateur" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="motif_contact" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="assignedagent" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Equipe" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_appel" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_post_trait" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="duree_total_traitement" nullable="true" pattern="" precision="-1" sourceType="INTEGER" type="id_Integer" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="Origine" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" defaultValue="'(NULL)'" key="false" length="50" name="TYPE_LIGNE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="50" offsetLabelY="50" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBInput_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="canal_contact"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_PATRIM1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="collaborateur"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputDelimited_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="DP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VILLE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="clef_patrimoine"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Proprietaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="canal_contact"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="service_responsbale"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="num_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Origine_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="etat_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Motif"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Gestionnaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn2"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="service_responsable"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="nbr_jour_resol"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="date_creation_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="collaborateur"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type_affaire"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tFileOutputDelimited_1" target="tDBInput_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk9" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_1" offsetLabelX="-6" offsetLabelY="-1" outputId="2" source="tFileOutputDelimited_1" target="tDBInput_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk10" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tFTPClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_2" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_2" target="tFTPPut_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_2" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_2" target="tFTPClose_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk7" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tDBInput_4" offsetLabelX="0" offsetLabelY="0" source="tDBInput_4" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="equipe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row4" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out2" lineStyle="0" metaname="out2" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="equipe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row5" lineStyle="8" metaname="tDBInput_5" offsetLabelX="0" offsetLabelY="0" source="tDBInput_5" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row5" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_3" target="tFTPConnection_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk13" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_3" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_3" target="tFTPPut_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk11" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_3" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_3" target="tFTPClose_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk12" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tDBInput_3" offsetLabelX="0" offsetLabelY="0" source="tDBInput_3" target="tMap_3">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="mydatefiltre"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="Equipe"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout2" lineStyle="0" metaname="copyOfout2" offsetLabelX="0" offsetLabelY="0" source="tMap_3" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="type_unique"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout2" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="8" metaname="tDBInput_6" offsetLabelX="0" offsetLabelY="0" source="tDBInput_6" target="tMap_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row6" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_2" target="tFTPConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk8" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_4" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_3" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

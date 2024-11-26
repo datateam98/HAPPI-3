@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_KiOQ0IboEeqPFYGZtPofHQ" comment="connectionComment" label="connectionLabel" dataPackage="_KiOQ0YboEeqPFYGZtPofHQ"/>
+  <TalendMetadata:GenericPackage xmi:id="_KiOQ0YboEeqPFYGZtPofHQ" dataManager="_KiOQ0IboEeqPFYGZtPofHQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_KiOQ0oboEeqPFYGZtPofHQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ04boEeqPFYGZtPofHQ" name="LB_SOCPROP" id="412515" label="LB_SOCPROP" length="60" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ1IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ1YboEeqPFYGZtPofHQ" name="NO_PIECE" id="412403" label="NO_PIECE" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_KiOQ1oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ14boEeqPFYGZtPofHQ" name="LB_PIECE" id="414378" label="LB_PIECE" length="60" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ2IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ2YboEeqPFYGZtPofHQ" name="LB_ETAT_PI" id="414379" label="LB_ETAT_PI" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ2oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ24boEeqPFYGZtPofHQ" name="TY_PIECE" id="414380" label="TY_PIECE" length="8" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ3IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ3YboEeqPFYGZtPofHQ" name="LB_ETAPREA" id="414381" label="LB_ETAPREA" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ3oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ34boEeqPFYGZtPofHQ" name="DT_PIECE" id="414382" label="DT_PIECE" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_KiOQ4IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ4YboEeqPFYGZtPofHQ" name="ID_FRS" id="414383" label="ID_FRS" length="7" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_KiOQ4oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ44boEeqPFYGZtPofHQ" name="NOM_FRS" id="414384" label="NOM_FRS" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ5IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ5YboEeqPFYGZtPofHQ" name="PRE_FRS" id="414386" label="PRE_FRS" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ5oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ54boEeqPFYGZtPofHQ" name="MT_CDE_HT" id="414387" label="MT_CDE_HT" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_KiOQ6IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ6YboEeqPFYGZtPofHQ" name="MT_CDE_TTC" id="414089" label="MT_CDE_TTC" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_KiOQ6oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ64boEeqPFYGZtPofHQ" name="SC_CLE_HO" id="414388" label="SC_CLE_HO" length="7" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_KiOQ7IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ7YboEeqPFYGZtPofHQ" name="SC_CD_ORG1" id="414389" label="SC_CD_ORG1" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ7oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ74boEeqPFYGZtPofHQ" name="SC_CD_ORG2" id="414390" label="SC_CD_ORG2" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ8IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ8YboEeqPFYGZtPofHQ" name="SC_CD_ORG3" id="414391" label="SC_CD_ORG3" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ8oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ84boEeqPFYGZtPofHQ" name="SA_CLE_HO" id="414392" label="SA_CLE_HO" length="7" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_KiOQ9IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ9YboEeqPFYGZtPofHQ" name="SA_CD_ORG1" id="414393" label="SA_CD_ORG1" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ9oboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ94boEeqPFYGZtPofHQ" name="SA_CD_ORG2" id="414394" label="SA_CD_ORG2" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ-IboEeqPFYGZtPofHQ"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_KiOQ-YboEeqPFYGZtPofHQ" name="SA_CD_ORG3" id="414395" label="SA_CD_ORG3" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_KiOQ-oboEeqPFYGZtPofHQ"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

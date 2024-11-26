@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_-RJLAPKmEeqA7Mtuf8Hd4A" comment="connectionComment" label="connectionLabel" dataPackage="_-RJLAfKmEeqA7Mtuf8Hd4A" mappingTypeUsed="true" mappingTypeId="as400_id"/>
+  <TalendMetadata:GenericPackage xmi:id="_-RJLAfKmEeqA7Mtuf8Hd4A" dataManager="_-RJLAPKmEeqA7Mtuf8Hd4A">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_-RJLAvKmEeqA7Mtuf8Hd4A" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLA_KmEeqA7Mtuf8Hd4A" name="ACLP-Identifiant" id="3067" label="ACLP_Identifiant" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLBPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLBfKmEeqA7Mtuf8Hd4A" name="ACFP-Identifiant" id="3068" label="ACFP_Identifiant" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLBvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLB_KmEeqA7Mtuf8Hd4A" name="GVST-Cle societe" id="3069" label="GVST_Cle_societe" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLCPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLCfKmEeqA7Mtuf8Hd4A" name="GVTA-Code activite" id="3070" label="GVTA_Code_activite" length="10" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLCvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLC_KmEeqA7Mtuf8Hd4A" name="LVCD-N�� Lot" id="3071" label="LVCD_N___Lot" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLDPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLDfKmEeqA7Mtuf8Hd4A" name="PLLO-Date generation" id="3072" label="PLLO_Date_generation" length="10" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_-RJLDvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLD_KmEeqA7Mtuf8Hd4A" name="LVDF-Numero dossier facturation" id="3073" label="LVDF_Numero_dossier_facturation" length="7" sourceType="NUMERIC" talendType="id_Integer" nullable="false">
+        <initialValue xmi:id="_-RJLEPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLEfKmEeqA7Mtuf8Hd4A" name="LVME-Numero menage" id="3074" label="LVME_Numero_menage" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLEvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLE_KmEeqA7Mtuf8Hd4A" name="LVME-Cle tresor" id="3075" label="LVME_Cle_tresor" length="1" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLFPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLFfKmEeqA7Mtuf8Hd4A" name="LVCC-Numero contrat client" id="3076" label="LVCC_Numero_contrat_client" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLFvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLF_KmEeqA7Mtuf8Hd4A" name="LVPC-No ordre patrimoine contrat" id="3077" label="LVPC_No_ordre_patrimoine_contrat" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLGPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLGfKmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 1" id="3078" label="LVPA_Niveau_1" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLGvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLG_KmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 2" id="3079" label="LVPA_Niveau_2" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLHPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLHfKmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 3" id="3080" label="LVPA_Niveau_3" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLHvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLH_KmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 4" id="3081" label="LVPA_Niveau_4" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLIPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLIfKmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 5" id="3082" label="LVPA_Niveau_5" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLIvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLI_KmEeqA7Mtuf8Hd4A" name="LVPA-Niveau 6" id="3083" label="LVPA_Niveau_6" length="5" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLJPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLJfKmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 1" id="3084" label="Adresse_locataire___GVSA_Ligne_1" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLJvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLJ_KmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 2" id="3085" label="Adresse_locataire___GVSA_Ligne_2" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLKPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLKfKmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 3" id="3086" label="Adresse_locataire___GVSA_Ligne_3" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLKvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLK_KmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 4" id="3087" label="Adresse_locataire___GVSA_Ligne_4" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLLPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLLfKmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 5" id="3088" label="Adresse_locataire___GVSA_Ligne_5" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLLvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLL_KmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Ligne 6" id="3089" label="Adresse_locataire___GVSA_Ligne_6" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLMPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLMfKmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Code postal" id="3090" label="Adresse_locataire___GVSA_Code_postal" length="5" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLMvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLM_KmEeqA7Mtuf8Hd4A" name="Adresse locataire | GVSA-Localite" id="3091" label="Adresse_locataire___GVSA_Localite" length="32" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLNPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLNfKmEeqA7Mtuf8Hd4A" name="LVDF-Ancien numero" id="3092" label="LVDF_Ancien_numero" length="25" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLNvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLN_KmEeqA7Mtuf8Hd4A" name="LVRD-Numero ordre" id="3093" label="LVRD_Numero_ordre" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLOPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLOfKmEeqA7Mtuf8Hd4A" name="LVRN-Numero ordre" id="3094" label="LVRN_Numero_ordre" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLOvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLO_KmEeqA7Mtuf8Hd4A" name="LVPV-Code periode prelevement" id="3095" label="LVPV_Code_periode_prelevement" length="10" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLPPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLPfKmEeqA7Mtuf8Hd4A" name="LVPV-Libelle" id="3096" label="LVPV_Libelle" length="30" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLPvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLP_KmEeqA7Mtuf8Hd4A" name="Tiers preleve | GVTQ-Cle tiers-qualite" id="3097" label="Tiers_preleve___GVTQ_Cle_tiers_qualite" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLQPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLQfKmEeqA7Mtuf8Hd4A" name="GVSB-Cle bancaire" id="3098" label="GVSB_Cle_bancaire" length="7" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLQvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLQ_KmEeqA7Mtuf8Hd4A" name="GVBQ-Code banque" id="3099" label="GVBQ_Code_banque" length="5" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLRPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLRfKmEeqA7Mtuf8Hd4A" name="GVBQ-Code guichet" id="3100" label="GVBQ_Code_guichet" length="5" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLRvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLR_KmEeqA7Mtuf8Hd4A" name="GVSB-No compte" id="3101" label="GVSB_No_compte" length="11" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLSPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLSfKmEeqA7Mtuf8Hd4A" name="GVSB-Cle rib" id="3102" label="GVSB_Cle_rib" length="2" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLSvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLS_KmEeqA7Mtuf8Hd4A" name="GVSB-Titulaire du compte" id="3103" label="GVSB_Titulaire_du_compte" length="30" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLTPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLTfKmEeqA7Mtuf8Hd4A" name="GVSB-Code BIC" id="3104" label="GVSB_Code_BIC" length="11" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLTvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLT_KmEeqA7Mtuf8Hd4A" name="GVSB-Code pays" id="3105" label="GVSB_Code_pays" length="2" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLUPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLUfKmEeqA7Mtuf8Hd4A" name="GVSB-Ctrl IBAN" id="3106" label="GVSB_Ctrl_IBAN" length="2" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLUvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLU_KmEeqA7Mtuf8Hd4A" name="GVSB-BBAN1" id="3107" label="GVSB_BBAN1" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLVPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLVfKmEeqA7Mtuf8Hd4A" name="GVSB-BBAN2" id="3108" label="GVSB_BBAN2" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLVvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLV_KmEeqA7Mtuf8Hd4A" name="GVSB-BBAN3" id="3109" label="GVSB_BBAN3" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLWPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLWfKmEeqA7Mtuf8Hd4A" name="GVSB-BBAN4" id="3110" label="GVSB_BBAN4" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLWvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLW_KmEeqA7Mtuf8Hd4A" name="GVSB-BBAN5" id="3111" label="GVSB_BBAN5" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLXPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLXfKmEeqA7Mtuf8Hd4A" name="GVSB-BBAN6" id="3112" label="GVSB_BBAN6" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLXvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLX_KmEeqA7Mtuf8Hd4A" name="GVSB-BBAN7" id="3113" label="GVSB_BBAN7" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLYPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLYfKmEeqA7Mtuf8Hd4A" name="GVSB-BBAN8" id="3114" label="GVSB_BBAN8" length="4" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLYvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLY_KmEeqA7Mtuf8Hd4A" name="LVRM-Reference Unique Mandat" id="3115" label="LVRM_Reference_Unique_Mandat" length="10" sourceType="NUMERIC" talendType="id_Float" nullable="false">
+        <initialValue xmi:id="_-RJLZPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLZfKmEeqA7Mtuf8Hd4A" name="LVME-Nombre occupants" id="3116" label="LVME_Nombre_occupants" length="3" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLZvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLZ_KmEeqA7Mtuf8Hd4A" name="LVME-Nombre enfants" id="3117" label="LVME_Nombre_enfants" length="3" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLaPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLafKmEeqA7Mtuf8Hd4A" name="LVME-Nombre co-contractants" id="3118" label="LVME_Nombre_co_contractants" length="3" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLavKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLa_KmEeqA7Mtuf8Hd4A" name="LVME-Nombre personnes a charge" id="3119" label="LVME_Nombre_personnes_a_charge" length="3" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLbPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLbfKmEeqA7Mtuf8Hd4A" name="PLLO-Nombre ascendants" id="3120" label="PLLO_Nombre_ascendants" length="3" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLbvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLb_KmEeqA7Mtuf8Hd4A" name="LVME-Formule de politesse" id="3121" label="LVME_Formule_de_politesse" length="60" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLcPKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLcfKmEeqA7Mtuf8Hd4A" name="PAZD-Code categorie de menage" id="3122" label="PAZD_Code_categorie_de_menage" length="10" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLcvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLc_KmEeqA7Mtuf8Hd4A" name="PLLO-Mt plafond ressources" id="3123" label="PLLO_Mt_plafond_ressources" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLdPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLdfKmEeqA7Mtuf8Hd4A" name="PLLO-Pourcentage depassement" id="3124" label="PLLO_Pourcentage_depassement" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLdvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLd_KmEeqA7Mtuf8Hd4A" name="PLLO-Pourcentage plafond" id="3125" label="PLLO_Pourcentage_plafond" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLePKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLefKmEeqA7Mtuf8Hd4A" name="PLLO-Date ressources" id="3126" label="PLLO_Date_ressources" length="10" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_-RJLevKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLe_KmEeqA7Mtuf8Hd4A" name="PLLO-Ressources mensuelles" id="3127" label="PLLO_Ressources_mensuelles" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLfPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLffKmEeqA7Mtuf8Hd4A" name="PLLO-Date salaire" id="3128" label="PLLO_Date_salaire" length="10" sourceType="DATE" talendType="id_Date" nullable="false" pattern="&quot;yyyy-MM-dd&quot;">
+        <initialValue xmi:id="_-RJLfvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLf_KmEeqA7Mtuf8Hd4A" name="PLLO-Salaire mensuel" id="3129" label="PLLO_Salaire_mensuel" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLgPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLgfKmEeqA7Mtuf8Hd4A" name="PLLO-Annee revenus" id="3130" label="PLLO_Annee_revenus" length="4" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLgvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLg_KmEeqA7Mtuf8Hd4A" name="PLLO-Revenus annuel" id="3131" label="PLLO_Revenus_annuel" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLhPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLhfKmEeqA7Mtuf8Hd4A" name="reference | PACP-Categorie plafond" id="3132" label="reference___PACP_Categorie_plafond" length="10" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLhvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLh_KmEeqA7Mtuf8Hd4A" name="reference | PLLO-Annee revenus" id="3133" label="reference___PLLO_Annee_revenus" length="4" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLiPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLifKmEeqA7Mtuf8Hd4A" name="reference | PLLO-Revenus annuel" id="3134" label="reference___PLLO_Revenus_annuel" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLivKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLi_KmEeqA7Mtuf8Hd4A" name="reference | PLLO-Mt plafond ressources" id="3135" label="reference___PLLO_Mt_plafond_ressources" length="11" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLjPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLjfKmEeqA7Mtuf8Hd4A" name="reference | PLLO-Pourcentage depassement" id="3136" label="reference___PLLO_Pourcentage_depassement" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLjvKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLj_KmEeqA7Mtuf8Hd4A" name="reference | PLLO-Pourcentage plafond" id="3137" label="reference___PLLO_Pourcentage_plafond" length="5" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal" nullable="false">
+        <initialValue xmi:id="_-RJLkPKmEeqA7Mtuf8Hd4A" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_-RJLkfKmEeqA7Mtuf8Hd4A" name="PLLO-Sous occupation" id="3138" label="PLLO_Sous_occupation" length="1" sourceType="CHAR" talendType="id_String" nullable="false">
+        <initialValue xmi:id="_-RJLkvKmEeqA7Mtuf8Hd4A"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

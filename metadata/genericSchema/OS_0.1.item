@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_pYwqsL8QEeqm4NpRy2jkNg" comment="connectionComment" label="connectionLabel" dataPackage="_pYwqsb8QEeqm4NpRy2jkNg"/>
+  <TalendMetadata:GenericPackage xmi:id="_pYwqsb8QEeqm4NpRy2jkNg" dataManager="_pYwqsL8QEeqm4NpRy2jkNg">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_pYwqsr8QEeqm4NpRy2jkNg" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRwL8QEeqm4NpRy2jkNg" name="Societe_Proprietaire" id="132579" label="Societe_Proprietaire" length="60" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRwb8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRwr8QEeqm4NpRy2jkNg" name="DT" id="132580" label="DT" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRw78QEeqm4NpRy2jkNg" body="'(NULL)'"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRxL8QEeqm4NpRy2jkNg" name="DP" id="132581" label="DP" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRxb8QEeqm4NpRy2jkNg" body="'(NULL)'"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRxr8QEeqm4NpRy2jkNg" name="VILLE" id="132582" label="VILLE" length="50" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRx78QEeqm4NpRy2jkNg" body="'(NULL)'"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRyL8QEeqm4NpRy2jkNg" name="Ref_Patrimoine" id="132583" label="Ref_Patrimoine" length="25" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRyb8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRyr8QEeqm4NpRy2jkNg" name="No_Piece" id="132584" label="No_Piece" length="10" sourceType="INT" talendType="id_Integer" key="true" nullable="false">
+        <initialValue xmi:id="_pYxRy78QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRzL8QEeqm4NpRy2jkNg" name="Libelle_Piece" id="132585" label="Libelle_Piece" length="60" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRzb8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxRzr8QEeqm4NpRy2jkNg" name="Libelle_Etat_Piece" id="132586" label="Libelle_Etat_Piece" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxRz78QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR0L8QEeqm4NpRy2jkNg" name="Type_Piece" id="132587" label="Type_Piece" length="8" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR0b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR0r8QEeqm4NpRy2jkNg" name="Libelle_Etape_Realisation" id="132588" label="Libelle_Etape_Realisation" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR078QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR1L8QEeqm4NpRy2jkNg" name="Date_Piece" id="132589" label="Date_Piece" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_pYxR1b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR1r8QEeqm4NpRy2jkNg" name="Date_Execution_Prevue" id="132590" label="Date_Execution_Prevue" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_pYxR178QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR2L8QEeqm4NpRy2jkNg" name="Identifiant_Fournisseur" id="132591" label="Identifiant_Fournisseur" length="7" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_pYxR2b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR2r8QEeqm4NpRy2jkNg" name="Nom_Fournisseur" id="132592" label="Nom_Fournisseur" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR278QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR3L8QEeqm4NpRy2jkNg" name="Prenom_Fournisseur" id="132593" label="Prenom_Fournisseur" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR3b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR3r8QEeqm4NpRy2jkNg" name="Service_Creation_Niv1" id="132594" label="Service_Creation_Niv1" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR378QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR4L8QEeqm4NpRy2jkNg" name="Service_Creation_Niv2" id="132595" label="Service_Creation_Niv2" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR4b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR4r8QEeqm4NpRy2jkNg" name="Service_Creation_Niv3" id="132596" label="Service_Creation_Niv3" length="5" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR478QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR5L8QEeqm4NpRy2jkNg" name="Libelle_Service_Creation_Niv1" id="132597" label="Libelle_Service_Creation_Niv1" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR5b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR5r8QEeqm4NpRy2jkNg" name="Libelle_Service_Creation_Niv2" id="132598" label="Libelle_Service_Creation_Niv2" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR578QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR6L8QEeqm4NpRy2jkNg" name="Libelle_Service_Creation_Niv3" id="132599" label="Libelle_Service_Creation_Niv3" length="30" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR6b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR6r8QEeqm4NpRy2jkNg" name="Code_Comptable" id="132600" label="Code_Comptable" length="12" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR678QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR7L8QEeqm4NpRy2jkNg" name="Code_Montant" id="132601" label="Code_Montant" length="100" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR7b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR7r8QEeqm4NpRy2jkNg" name="Montant_Credit" id="132602" label="Montant_Credit" length="38" precision="2" sourceType="DECIMAL" talendType="id_BigDecimal">
+        <initialValue xmi:id="_pYxR778QEeqm4NpRy2jkNg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR8L8QEeqm4NpRy2jkNg" name="Montant_Debit" id="132603" label="Montant_Debit" length="38" precision="2" sourceType="FLOAT" talendType="id_BigDecimal">
+        <initialValue xmi:id="_pYxR8b8QEeqm4NpRy2jkNg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR8r8QEeqm4NpRy2jkNg" name="MULTI_OS_PATRIM" id="132604" label="MULTI_OS_PATRIM" length="10" sourceType="INT" talendType="id_Integer">
+        <initialValue xmi:id="_pYxR878QEeqm4NpRy2jkNg" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR9L8QEeqm4NpRy2jkNg" name="Solde_O_N" id="132605" label="Solde_O_N" length="1" sourceType="CHAR" talendType="id_String">
+        <initialValue xmi:id="_pYxR9b8QEeqm4NpRy2jkNg"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_pYxR9r8QEeqm4NpRy2jkNg" name="Date_Alimentation_Infocentre" id="132606" label="Date_Alimentation_Infocentre" length="23" precision="3" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_pYxR978QEeqm4NpRy2jkNg"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

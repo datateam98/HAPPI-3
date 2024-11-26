@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:bGw7b0tU8jvTQs1JG9u83D3a1CBbn+m+sYT3wMEY" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TOS_DI-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:6H7ppOLiTeXc0X2I5xq7MGA2+ctk/2K4KJU99dsF" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_oxBgcHV-EeqtycFpU7rNMQ" name="DataOperation"/>
+    <routinesParameter id="_ox6RQHV-EeqtycFpU7rNMQ" name="Mathematical"/>
+    <routinesParameter id="_oyAX4HV-EeqtycFpU7rNMQ" name="Numeric"/>
+    <routinesParameter id="_oyHsoHV-EeqtycFpU7rNMQ" name="Relational"/>
+    <routinesParameter id="_oyNzQHV-EeqtycFpU7rNMQ" name="StringHandling"/>
+    <routinesParameter id="_oyT54HV-EeqtycFpU7rNMQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_oyh8UHV-EeqtycFpU7rNMQ" name="TalendDate"/>
+    <routinesParameter id="_oyuJkHV-EeqtycFpU7rNMQ" name="TalendStringUtil"/>
+    <routinesParameter id="_oyoqAHV-EeqtycFpU7rNMQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="64" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="256" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZF0QsIMEEeqKU-bzaY3FDA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ACGSQL01&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGINFO1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:qQ4y2zU5a834XgDEzJpES6qfKDDuTpokj9LYM+2p"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;instance=DECISIONNELLE&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>Connexion INFOCENTRE&lt;/b>&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPostjob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="288" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_tjhmYIhnEeqe850T4QdN1w" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;hauts-de-seine-habitat&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/XOoC+naGh+hf01YuHVsb2d+Dz4gY48Ed6FaL295m58iZewD0yA1efcYkD5jar6qVD99TBkICl/0VFmmc2s="/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:56nUCsHMz5QYHo7TrcsvrQHrkuu20CR8jYYbvSt0BkGr/g=="/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:upCHg1+Lls3K9QgPzDvj3ejHR3Yk8n4gQRJlsIYE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:TtaGclBmNWwY7GAhLtPnoubdwsVcbL0gN4ooWzyf" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tFTPPut" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ftps.toucantoco.com&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PORT" value="990" show="false"/>
+    <elementParameter field="TEXT" name="USERNAME" value="&quot;hauts-de-seine-habitat&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:xVGYEFYENI043yFsbkwWvV6Pa1lcJC5pTsMBp9jUjxj0K+kv2tnL0H6X4ANiVGIjdIH50d4473TycpbBpTrboSrMAQMcd9Y=" show="false"/>
+    <elementParameter field="CHECK" name="SFTP" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FTPS" value="true" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="&quot;&quot;" show="false"/>
+    <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:L+a1uORH+0rwR4tCuTsXgpYD4f+sYkhxmEHLzIYo" show="false"/>
+    <elementParameter field="DIRECTORY" name="LOCALDIR" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/Budget&quot;"/>
+    <elementParameter field="TEXT" name="REMOTEDIR" value="&quot;./Budget&quot;"/>
+    <elementParameter field="CHECK" name="CREATE_DIR_IF_NOT_EXIST" value="true"/>
+    <elementParameter field="CHECK" name="MOVE_TO_THE_CURRENT_DIRECTORY" value="false"/>
+    <elementParameter field="FILE" name="KEYSTORE_FILE" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/keystore&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="KEYSTORE_PASS" value="enc:system.encryption.key.v1:CQC+kF5lk5n/dnFN8q0xP9NKBGNC3uzU9veLw5Jy/UGbDg==" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="MODE" value="ascii" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="OVERWRITE" value="never" show="false"/>
+    <elementParameter field="CHECK" name="APPEND" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SFTPOVERWRITE" value="overwrite" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FTPSOVERWRITE" value="always"/>
+    <elementParameter field="LABEL" name="NOTE_CUSTOMER" value="Note: File can not be renamed while using &quot;append&quot; mode in SFTP" show="false"/>
+    <elementParameter field="CHECK" name="PERL5_REGEX" value="false"/>
+    <elementParameter field="TABLE" name="FILES">
+      <elementValue elementRef="FILEMASK" value="&quot;Liste.csv&quot;"/>
+      <elementValue elementRef="NEWNAME" value="&quot;&quot;"/>
+    </elementParameter>
+    <elementParameter field="CLOSED_LIST" name="CONNECT_MODE" value="PASSIVE" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="SECURITY_MODE" value="IMPLICIT" show="false"/>
+    <elementParameter field="CHECK" name="USE_ENCODING" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="USE_PROXY" value="false" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROXY_USERNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PROXY_PASSWORD" value="enc:system.encryption.key.v1:jSx6R8LDZweCWtHjg7+bq9j3Aph9jELWUZSqPsmI" show="false"/>
+    <elementParameter field="CHECK" name="IGNORE_FAILURE_AT_QUIT" value="false" show="false"/>
+    <elementParameter field="OPENED_LIST" name="FTPS_PROT" value="&quot;P&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FTPS_PROTECTION_BUFF_SIZE" value="0" show="false"/>
+    <elementParameter field="CHECK" name="REMOTE_VERIFICATION" value="true" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_TIMEOUT" value="0" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="outsoc" name="tFTPPut_1">
+      <column comment="" key="false" length="100" name="SocieteProprietaire" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DateTri" nullable="true" pattern="&quot;yyyy-MM&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_ALIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="TypeLocalisation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Localisation" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Montant" nullable="true" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Nature" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="MotifVac" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="100" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Parent" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ParentType" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="Parent2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="100" name="ParentType2" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="-1" name="Facturable" nullable="true" pattern="" precision="-1" sourceType="NUMERIC" type="id_BigDecimal" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFTPClose" componentVersion="2.0" offsetLabelX="0" offsetLabelY="0" posX="704" posY="352">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tFTPConnection_1"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tAS400Connection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="416" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7W_7QHW5EequsMhDMjGncg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;S4410625&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGPROD&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="AS400" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;dkhuon&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:uPM7FeaKV7Oyqv2XnaF7C3mi2Z2hm+Ud2Wyqcs1Nv0tKp8h5HV9f"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>Connexion PROD&lt;/b>&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="640" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_7" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:83slBGtLOz/HzRtanSFhizRb/OEK8NRLWop8LqYZ" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;select &#xD;&#xA;db.CD_EXEC,&#xD;&#xA;FORMAT(DT_CONSO, 'yyyy-MM') as DT_CONSO,&#xD;&#xA;compte ,&#xD;&#xA;lp.CD_PATRIM1 ,&#xD;&#xA;pg.CD_PATRIM,&#xD;&#xA;pg.CD_LOCALI1 ,&#xD;&#xA;CASE &#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'C' THEN 'Commande'&#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'F' THEN 'Facture'&#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'A' THEN 'Avoir'&#xD;&#xA;&#x9;else ep.CD_ORIPIEC&#xD;&#xA;END as 'Origine piece',&#xD;&#xA;ep.NO_PIECE ,&#xD;&#xA;REPLACE(ep.LB_PIECE , ';', ' ') as LB_PIECE,&#xD;&#xA;ep.DT_PIECE ,&#xD;&#xA;ep.NO_REGLE ,&#xD;&#xA;ep.LB_REGLE ,&#xD;&#xA;ep.LB_TIERS ,&#xD;&#xA;og.LB_CODE1 ,&#xD;&#xA;/*lp.LB_L_PIECE ,&#xD;&#xA;lp.LB_DESTINA ,&#xD;&#xA;lp.LB_METIER ,&#xD;&#xA;lp.LB_NATURE ,&#xD;&#xA;lp.LB_PRESTA ,*/&#xD;&#xA;sum(MT_ENGAG) as MT_ENGAG,&#xD;&#xA;sum(MT_FACTURE) as MT_FACTURE,&#xD;&#xA;sum(MT_DEGAG) as MT_DEGAG,&#xD;&#xA;sum(MT_QUICONS) as MT_QUICONS,&#xD;&#xA;max(db.DT_ALIM) as DT_ALIM&#xD;&#xA;from DET_BUD db &#xD;&#xA;left join ENT_PIECE ep on ep.ID_ENTPIEC = db.ID_ENTPIEC &#xD;&#xA;left join LGN_PIECE lp on db.ID_ENTPIEC = lp.ID_ENTPIEC and db.ID_LIGPIEC = lp.ID_LIGPIEC &#xD;&#xA;left join PATRIMOINE_GIM pg  on lp.CD_PATRIM1 = pg.CD_PATRIM1 &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and lp.CD_PATRIM2 = pg.CD_PATRIM2&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and lp.CD_PATRIM3 = pg.CD_PATRIM3 &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and lp.CD_PATRIM4 = pg.CD_PATRIM4 &#xD;&#xA;left join ORGANISAT_GIM og on lp.CD_HORG_ENT = og.CD_HIERORG &#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;and og.CD_ENT_HIER = 1&#xD;&#xA;where db.CD_EXEC >= year(getdate())-1&#xD;&#xA;and SUBSTRING(compte ,1 , 1 ) in ('6', '7')&#xD;&#xA;and db.CD_COMPTA = 'A'&#xD;&#xA;group by &#xD;&#xA;db.CD_EXEC,&#xD;&#xA;FORMAT(DT_CONSO, 'yyyy-MM'),&#xD;&#xA;compte ,&#xD;&#xA;lp.CD_PATRIM1 ,&#xD;&#xA;pg.CD_PATRIM,&#xD;&#xA;pg.CD_LOCALI1 ,&#xD;&#xA;CASE &#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'C' THEN 'Commande'&#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'F' THEN 'Facture'&#xD;&#xA;&#x9;WHEN ep.CD_ORIPIEC = 'A' THEN 'Avoir'&#xD;&#xA;&#x9;else ep.CD_ORIPIEC&#xD;&#xA;END,&#xD;&#xA;ep.NO_PIECE ,&#xD;&#xA;REPLACE(ep.LB_PIECE , ';', ' '),&#xD;&#xA;ep.DT_PIECE ,&#xD;&#xA;ep.NO_REGLE ,&#xD;&#xA;ep.LB_REGLE ,&#xD;&#xA;ep.LB_TIERS,&#xD;&#xA;og.LB_CODE1 &#xD;&#xA;order by 2, 11, 6&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_EXEC"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_CONSO"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="COMPTE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GROUPE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_PATRIM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="TYPE_PIECE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_PIECE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LB_PIECE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_PIECE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NO_MARCHE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LB_MARCHE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LB_TIERS"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LB_SERVICE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MT_CMD"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MT_FACTURE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MT_DEGAGE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="MT_QUI_CONSOMME"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT_ALIM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>Liste Conso&lt;/b>&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_7">
+      <column comment="" key="false" length="-1" name="CD_EXEC" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="DT_CONSO" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="COMPTE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GROUPE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_PATRIM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_LOCALI1" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_PIECE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_MARCHE" nullable="true" pattern="" precision="-1" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_MARCHE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_TIERS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_SERVICE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_CMD" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_FACTURE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_DEGAGE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_QUI_CONSOMME" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_ALIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_2" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_WErBALACEeyP-PXboGkEOA-tMap_2-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="copyOfout3">
+      <column comment="" key="false" length="-1" name="CD_EXEC" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Periode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HDSH" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="DT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ServiceGFC" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Compte" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Type" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SousType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GROUPE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_PATRIM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_PIECE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_MARCHE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_MARCHE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_TIERS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_CMD" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_FACTURE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_DEGAGE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_QUI_CONSOMME" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_ALIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var">
+        <mapperTableEntries name="Type" expression="row8.COMPTE.startsWith(&quot;677888&quot;) ? &quot;Charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;615212&quot;) ? &quot;Entretien du patrimoine&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606161&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606151&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606142&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606141&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606132&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606131&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606122&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606121&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606112&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606111&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;70948&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;70943&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;67862&quot;) ? &quot;Charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61581&quot;) ? &quot;Entretien du patrimoine&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61522&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61512&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61511&quot;) ? &quot;Entretien du patrimoine&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61352&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61182&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61181&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61161&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61142&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61141&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61132&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61131&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61122&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61121&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61112&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61111&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60682&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60681&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60632&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60631&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7784&quot;) ? &quot;Produits exceptionnels&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7048&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7046&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7045&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7044&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7043&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7042&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7041&quot;) ? &quot;Loyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6786&quot;) ? &quot;Charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6732&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6722&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6227&quot;) ? &quot;Autres services extérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6226&quot;) ? &quot;Autres services extérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6224&quot;) ? &quot;Autres services extérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6223&quot;) ? &quot;Autres services extérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6156&quot;) ? &quot;Entretien du patrimoine&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6152&quot;) ? &quot;Entretien du patrimoine&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6142&quot;) ? &quot;Charges récupérables&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6115&quot;) ? &quot;Sous-traitance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6064&quot;) ? &quot;Achats non stockés&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;772&quot;) ? &quot;Produits exceptionnels&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;771&quot;) ? &quot;Produits exceptionnels&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;743&quot;) ? &quot;Autres produits d exploitation&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;672&quot;) ? &quot;Charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;671&quot;) ? &quot;Charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;654&quot;) ? &quot;Autres charges de gestion courante&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;77&quot;) ? &quot;Produits exceptionnels&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;75&quot;) ? &quot;Autres produits d exploitation&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;65&quot;) ? &quot;Autres charges de gestion courante&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;62&quot;) ? &quot;Autres services extérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61&quot;) ? &quot;Autres services extérieurs&quot; : &quot;-&quot; " type="id_String"/>
+        <mapperTableEntries name="SousType" expression="row8.COMPTE.startsWith(&quot;677888&quot;) ? &quot;Autres charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606161&quot;) ? &quot;Carburant&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606151&quot;) ? &quot;Carburant&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606142&quot;) ? &quot;Chauffage et énergie R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606141&quot;) ? &quot;Fluides&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606132&quot;) ? &quot;Chauffage et énergie R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606131&quot;) ? &quot;Fluides&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606122&quot;) ? &quot;Eau R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606121&quot;) ? &quot;Fluides&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606112&quot;) ? &quot;Chauffage et énergie R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;606111&quot;) ? &quot;Fluides&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;70948&quot;) ? &quot;RLS&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;70943&quot;) ? &quot;RLS&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;67862&quot;) ? &quot;Sinistres&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61581&quot;) ? &quot;Maintenance autre&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61521&quot;) ? &quot;Gros entretien&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61522&quot;) ? &quot;Entretien et maintenance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61512&quot;) ? &quot;Entretien et maintenance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61511&quot;) ? &quot;Petit Entretien&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61352&quot;) ? &quot;Locations et charges locatives R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61182&quot;) ? &quot;Sous-traitance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61181&quot;) ? &quot;Divers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61161&quot;) ? &quot;Ascenseurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61142&quot;) ? &quot;Sous-traitance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61141&quot;) ? &quot;Nettoyage&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61132&quot;) ? &quot;Sous-traitance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61131&quot;) ? &quot;Chauffage&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61122&quot;) ? &quot;Sous-traitance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61121&quot;) ? &quot;Espaces verts&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61112&quot;) ? &quot;Sous-traitance R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61111&quot;) ? &quot;Hygiène et sécurité&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60682&quot;) ? &quot;Fournitures R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60681&quot;) ? &quot;Fournitures&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60632&quot;) ? &quot;Fournitures R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;60631&quot;) ? &quot;Fournitures&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7784&quot;) ? &quot;Indemnités assurance&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7048&quot;) ? &quot;logements (hors RLS / SLS)&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7046&quot;) ? &quot;foyers&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7045&quot;) ? &quot;parking&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7044&quot;) ? &quot;locaux commerciaux&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7043&quot;) ? &quot;logements (hors RLS / SLS)&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7042&quot;) ? &quot;SLS&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;7041&quot;) ? &quot;logements (hors RLS / SLS)&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6786&quot;) ? &quot;Sinistres&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6732&quot;) ? &quot;Charges exceptionnelles R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6722&quot;) ? &quot;Charges exceptionnelles R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6227&quot;) ? &quot;Frais d'actes et de contentieux&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6226&quot;) ? &quot;Honoraires&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6224&quot;) ? &quot;Honoraires&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6223&quot;) ? &quot;Honoraires&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6156&quot;) ? &quot;Maintenance autre&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6142&quot;) ? &quot;Locations et charges locatives R&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6115&quot;) ? &quot;Frais de gestion d'immeubles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;6064&quot;) ? &quot;Fournitures&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;772&quot;) ? &quot;Produits exc. sur ex. antérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;771&quot;) ? &quot;Dégrèvements impôts&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;743&quot;) ? &quot;Subventions d'exploitation&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;672&quot;) ? &quot;Charges sur exercices antérieurs&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;671&quot;) ? &quot;Autres charges exceptionnelles&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;654&quot;) ? &quot;Pertes sur créances locataires&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;77&quot;) ? &quot;Autres&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;75&quot;) ? &quot;Autres produits de gestion courante&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;65&quot;) ? &quot;Autres&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;62&quot;) ? &quot;Autres&quot; :&#xD;&#xA;row8.COMPTE.startsWith(&quot;61&quot;) ? &quot;Autres&quot; : &quot;-&quot; " type="id_String"/>
+        <mapperTableEntries name="ServiceGFC" expression="row8.LB_SERVICE != null ?&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC BAGNEUX&quot;) ? &quot;DP BAGNEUX&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC BOIS-COLOMBES&quot;) ? &quot;DP BOIS-COLOMBES&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC Boulogne Billancourt&quot;) ? &quot;DP BOULOGNE BILLANCOURT&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC CHATENAY&quot;) ? &quot;DP CHATENAY&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC CLICHY&quot;) ? &quot;DP CLICHY&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC NANTERRE&quot;) ? &quot;DP NANTERRE&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC PLESSIS&quot;) ? &quot;DP PLESSIS&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC Rueil Malmaison&quot;) ? &quot;DP RUEIL MALMAISON&quot; :&#xD;&#xA;&#xD;&#xA;row8.LB_SERVICE.equals(&quot;GFC SURESNES&quot;) ? &quot;DP SURESNES&quot; : row8.LB_SERVICE.replace(&quot;GFC / GIM &quot;, &quot;&quot;).replace(&quot;GFC &quot;, &quot;&quot;) : &quot;-&quot; " type="id_String"/>
+      </varTables>
+      <outputTables sizeState="INTERMEDIATE" name="copyOfout3" expressionFilter="Var.Type != &quot;-&quot;" activateExpressionFilter="true" activateColumnNameFilter="true" columnNameFilter="">
+        <mapperTableEntries name="CD_EXEC" expression="row8.CD_EXEC " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="Periode" expression="row8.DT_CONSO " type="id_String" nullable="true"/>
+        <mapperTableEntries name="HDSH" expression="&quot;HAUTS-DE-SEINE HABITAT&quot;" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT" expression="row16.DT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" expression="&quot;DP &quot; + row16.DP " type="id_String" nullable="true"/>
+        <mapperTableEntries name="VILLE" expression="row16.VILLE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="ServiceGFC" expression="Var.ServiceGFC " type="id_String"/>
+        <mapperTableEntries name="Compte" expression="row8.COMPTE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="Type" expression="Var.Type " type="id_String"/>
+        <mapperTableEntries name="SousType" expression="Var.SousType " type="id_String"/>
+        <mapperTableEntries name="GROUPE" expression="row8.GROUPE " type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CD_PATRIM" expression="row8.CD_PATRIM " type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PIECE" expression="row8.TYPE_PIECE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NO_PIECE" expression="row8.NO_PIECE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LB_PIECE" expression="row8.LB_PIECE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT_PIECE" expression="row8.DT_PIECE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="NO_MARCHE" expression="row8.NO_MARCHE " type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LB_MARCHE" expression="row8.LB_MARCHE " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LB_TIERS" expression="row8.LB_TIERS " type="id_String" nullable="true"/>
+        <mapperTableEntries name="MT_CMD" expression="row8.MT_CMD " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_FACTURE" expression="row8.MT_FACTURE " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_DEGAGE" expression="row8.MT_DEGAGE " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_QUI_CONSOMME" expression="row8.MT_QUI_CONSOMME " type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DT_ALIM" expression="row8.DT_ALIM " type="id_Date" nullable="true"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row8" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CD_EXEC" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="DT_CONSO" type="id_String" nullable="true"/>
+        <mapperTableEntries name="COMPTE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="GROUPE" type="id_Integer" nullable="true"/>
+        <mapperTableEntries name="CD_PATRIM" type="id_String" nullable="true"/>
+        <mapperTableEntries name="CD_LOCALI1" type="id_String" nullable="true"/>
+        <mapperTableEntries name="TYPE_PIECE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NO_PIECE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LB_PIECE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT_PIECE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="NO_MARCHE" type="id_BigDecimal" nullable="true"/>
+        <mapperTableEntries name="LB_MARCHE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LB_TIERS" type="id_String" nullable="true"/>
+        <mapperTableEntries name="LB_SERVICE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="MT_CMD" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_FACTURE" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_DEGAGE" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="MT_QUI_CONSOMME" type="id_Float" nullable="true"/>
+        <mapperTableEntries name="DT_ALIM" type="id_Date" nullable="true"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row16" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="CD_LOCALI1" expression="row8.CD_LOCALI1 " type="id_String" nullable="true" operator="="/>
+        <mapperTableEntries name="VILLE" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DP" type="id_String" nullable="true"/>
+        <mapperTableEntries name="DT" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="768" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_13" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_Vit_EHWrEequsMhDMjGncg" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;SRVTOU01&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;HDSHData&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:WOv0DFlswy9kSriMpEemTkdGDrt/tJjQdLJQtWIn"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;T_DEF_LOCALISATION&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;select *&#xD;&#xA;from T_DEF_LOCALISATION&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VILLE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DP"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="DT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>Table T_DEF_LOCALISATION&lt;/b>&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="T_DEF_LOCALISATION" name="tDBInput_13">
+      <column comment="" key="false" length="50" name="CD_LOCALI1" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputDelimited_4" show="false"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/FTPToucan/Budget/Liste.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" value="true" show="false"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" value="&quot;\n&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" value="&quot;&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" value="1000" show="false"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="1" show="false"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="90" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_4">
+      <column comment="" key="false" length="-1" name="CD_EXEC" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="Periode" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="8" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="HDSH" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="50" name="DT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="DP" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="50" name="VILLE" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true">
+        <additionalField key="Comment" value=""/>
+      </column>
+      <column comment="" key="false" length="-1" name="ServiceGFC" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="12" name="Compte" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="Type" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="SousType" nullable="false" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="GROUPE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="CD_PATRIM" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="TYPE_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_PIECE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_PIECE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="NO_MARCHE" nullable="true" pattern="" precision="-1" sourceType="INT" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_MARCHE" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="LB_TIERS" nullable="true" pattern="" precision="-1" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_CMD" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_FACTURE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_DEGAGE" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="MT_QUI_CONSOMME" nullable="true" pattern="" precision="-1" sourceType="REAL" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="DT_ALIM" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="DATETIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_1" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_1" target="tDBConnection_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk4" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPostjob_1" offsetLabelX="0" offsetLabelY="0" source="tPostjob_1" target="tFTPConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk2" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPConnection_1" offsetLabelX="0" offsetLabelY="0" source="tFTPConnection_1" target="tFTPPut_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk3" show="false"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFTPPut_1" offsetLabelX="0" offsetLabelY="0" source="tFTPPut_1" target="tFTPClose_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk4" show="false"/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tDBConnection_2" offsetLabelX="0" offsetLabelY="0" source="tDBConnection_2" target="tDBInput_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnSubjobOk8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row8" lineStyle="0" metaname="tDBInput_7" offsetLabelX="0" offsetLabelY="0" source="tDBInput_7" target="tMap_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="CD_EXEC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateTri_M1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_EXEC_1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DateTri_A1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LB_SERVICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="SERVICE_OG"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_LOCALI1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MT_RECDEP"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_PATRIM1"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MT_QUI_CONSOMME"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MT_CMD"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MT_FACTURE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="GROUPE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_MARCHE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LB_MARCHE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LB_TIERS"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="TYPE_PIECE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="NO_PIECE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DT_PIECE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="MT_DEGAGE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LB_PIECE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="LB_SERVICE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DT_ALIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_PATRIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row8" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="copyOfout3" lineStyle="0" metaname="copyOfout3" offsetLabelX="0" offsetLabelY="0" source="tMap_2" target="tFileOutputDelimited_4">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="HDSH"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DT"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="ServiceGFC"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="DT_ALIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="CD_PATRIM"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VILLE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="copyOfout3" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row16" lineStyle="8" metaname="tDBInput_13" offsetLabelX="0" offsetLabelY="0" source="tDBInput_13" target="tMap_2">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row16" show="false"/>
+  </connection>
+  <note opaque="true" posX="640" posY="32" sizeHeight="64" sizeWidth="257" text="Extraction issu de l'infocentre">
+    <elementParameter field="CHECK" name="FONT_BOLD" value="true"/>
+  </note>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPostjob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPPut_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFTPClose_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_7" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

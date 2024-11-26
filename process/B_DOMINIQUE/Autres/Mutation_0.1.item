@@ -1,0 +1,1169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+  <context confirmationNeeded="false" name="Default"/>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" value="0" show="false"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" value="" show="false"/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" value="" show="false"/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" value="false" show="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" value="false" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" value="" show="false"/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:yzJxrOZ7bHyd/+QTkOQK+ZADvl2xr2uNQZIuU+/7" show="false"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning" show="false"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="false" show="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" value="false" show="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" value="false" show="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" value="&quot;C:/TOS_DI-20200219_1130-V7.3.1/workspace/.metadata&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" value="&quot;stats_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" value="&quot;logs_file.txt&quot;" show="false"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" value="&quot;meter_file.txt&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="ISO-8859-15" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15" show="false"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" value="tJDBCOutput" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="ORACLE_12" show="false"/>
+    <elementParameter field="TEXT" name="URL" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:o3v2fLlcj8JsnojgM1KaG68LvieaRtD5u9lkJUT6" show="false"/>
+    <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" value="true" show="false"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" value="" show="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" value="" show="false"/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" value="false" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" value="" show="false"/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" value="" show="false"/>
+    <routinesParameter id="_oxBgcHV-EeqtycFpU7rNMQ" name="DataOperation"/>
+    <routinesParameter id="_ox6RQHV-EeqtycFpU7rNMQ" name="Mathematical"/>
+    <routinesParameter id="_oyAX4HV-EeqtycFpU7rNMQ" name="Numeric"/>
+    <routinesParameter id="_oyHsoHV-EeqtycFpU7rNMQ" name="Relational"/>
+    <routinesParameter id="_oyNzQHV-EeqtycFpU7rNMQ" name="StringHandling"/>
+    <routinesParameter id="_oyT54HV-EeqtycFpU7rNMQ" name="TalendDataGenerator"/>
+    <routinesParameter id="_oyh8UHV-EeqtycFpU7rNMQ" name="TalendDate"/>
+    <routinesParameter id="_oyuJkHV-EeqtycFpU7rNMQ" name="TalendStringUtil"/>
+    <routinesParameter id="_oyoqAHV-EeqtycFpU7rNMQ" name="TalendString"/>
+  </parameters>
+  <node componentName="tMSSqlConnection" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_ZF0QsIMEEeqKU-bzaY3FDA" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;ACGSQL01&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGINFO1&quot;"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:7IsFTvQ7WWXJ9jmV6k36HIAUpMkP5aJAW3nYBFdi"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;instance=DECISIONNELLE&quot;"/>
+    <elementParameter field="CHECK" name="USE_SHARED_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="SHARED_CONNECTION_NAME" value="" show="false"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CHECK" name="AUTO_COMMIT" value="false"/>
+    <elementParameter field="CHECK" name="SHARE_IDENTITY_SETTING" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="&lt;b>Connexion INFOCENTRE&lt;/b>&lt;br>__UNIQUE_NAME__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tPrejob" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+  </node>
+  <node componentName="tAS400Input" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:PROPERTY_TYPE" value="REPOSITORY"/>
+    <elementParameter field="TECHNICAL" name="PROPERTY:REPOSITORY_PROPERTY_TYPE" value="_7W_7QHW5EequsMhDMjGncg" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="jt400-9.8.jar"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;S4410625&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;ACGPROD&quot;"/>
+    <elementParameter field="TEXT" name="TYPE" value="AS400" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;dkhuon&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:tieQVV1wFzJtm6u5dm2oWBzUNuuDnJgyfkFL4MZ49PvOur/TrUgZ"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;LDDED0&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;SELECT &#xD;&#xA;LVDMCN AS \&quot;LVDM-Numero demande patrimoine\&quot;,&#xD;&#xA;LVMERG AS \&quot;LVME-Numero menage\&quot;,&#xD;&#xA;LDKCCA AS \&quot;LDKC-Code classe\&quot;,&#xD;&#xA;LDTDCA AS \&quot;LDTD-Code modele demande\&quot;,&#xD;&#xA;LDDE01 AS \&quot;LDDE-Date demande\&quot;,&#xD;&#xA;LDETCA AS \&quot;LDET-Code etat\&quot;,&#xD;&#xA;LDETC1 AS \&quot;LDET-Code etat detaille\&quot;,&#xD;&#xA;LDDE02 AS \&quot;LDDE-Date etat\&quot;,&#xD;&#xA;LDDE03 AS \&quot;LDDE-Date etat detaille\&quot;,&#xD;&#xA;LDDE04 AS \&quot;LDDE-Ancien numero\&quot;,&#xD;&#xA;LDDE05 AS \&quot;LDDE-Numero interne\&quot;,&#xD;&#xA;LDDE06 AS \&quot;LDDE-Numero externe\&quot;,&#xD;&#xA;LDDE08 AS \&quot;LDDE-Exception n° unique\&quot;,&#xD;&#xA;LDDE10 AS \&quot;LDDE-Code creat automatique\&quot;,&#xD;&#xA;LDDE11 AS \&quot;LDDE-Code creat logic exterieur\&quot;,&#xD;&#xA;GVHOR1 AS \&quot;Service de creation | GVHO-Cle hierarchie organisa\&quot;,&#xD;&#xA;GVHOR2 AS \&quot;Service gestionnaire | GVHO-Cle hierarchie organis\&quot;,&#xD;&#xA;GVHO01 AS \&quot;GVHO-Niv 01\&quot;,&#xD;&#xA;GVHO02 AS \&quot;GVHO-Niv 02\&quot;,&#xD;&#xA;GVHO03 AS \&quot;GVHO-Niv 03\&quot;,&#xD;&#xA;GVHO08 AS \&quot;GVHO-Niv 04\&quot;,&#xD;&#xA;GVHO09 AS \&quot;GVHO-Niv 05\&quot;,&#xD;&#xA;GVHO10 AS \&quot;GVHO-Niv 06\&quot;,&#xD;&#xA;GVHO11 AS \&quot;GVHO-Niv 07\&quot;,&#xD;&#xA;GVHO12 AS \&quot;GVHO-Niv 08\&quot;,&#xD;&#xA;GVHO13 AS \&quot;GVHO-Niv 09\&quot;,&#xD;&#xA;GNHOR3 AS \&quot;Service affaire suivie par | GVHO-Cle hierarchie o\&quot;,&#xD;&#xA;GVPERG AS \&quot;GVPE-Cle personne\&quot;,&#xD;&#xA;LDDE13 AS \&quot;LDDE-Date fin validite\&quot;,&#xD;&#xA;LDDE14 AS \&quot;LDDE-Code dossier complet\&quot;,&#xD;&#xA;LDDE15 AS \&quot;LDDE-Date dossier complet\&quot;,&#xD;&#xA;PAMFCA AS \&quot;PAMF-Code motif annul demande\&quot;,&#xD;&#xA;LDMDC1 AS \&quot;Code motif principal | LDMD-Code motif\&quot;,&#xD;&#xA;LDMDC2 AS \&quot;Code motif 2 | LDMD-Code motif\&quot;,&#xD;&#xA;LDMDC3 AS \&quot;Code motif 3 | LDMD-Code motif\&quot;,&#xD;&#xA;LDMDC4 AS \&quot;Code motif 4 | LDMD-Code motif\&quot;,&#xD;&#xA;LDGICA AS \&quot;LDGI-Code origine\&quot;,&#xD;&#xA;LDPRCA AS \&quot;LDPR-Code dossier presente par\&quot;,&#xD;&#xA;LDDE16 AS \&quot;LDDE-Nb personnes a loger\&quot;,&#xD;&#xA;LDDE17 AS \&quot;LDDE-Nb droit de visite\&quot;,&#xD;&#xA;LDDE18 AS \&quot;LDDE-Deja locataire HLM\&quot;,&#xD;&#xA;LDC1CA AS \&quot;LDC1-Code interne\&quot;,&#xD;&#xA;LDC1C2 AS \&quot;Code interne 2 | LDC1-Code interne\&quot;,&#xD;&#xA;LDC1C3 AS \&quot;Code interne 3 | LDC1-Code interne\&quot;,&#xD;&#xA;LDC1C4 AS \&quot;Code interne 4 | LDC1-Code interne\&quot;,&#xD;&#xA;LDDE19 AS \&quot;LDDE-Nb de points\&quot;,&#xD;&#xA;LDDE21 AS \&quot;LDDE-Date disponibil souhaitee\&quot;,&#xD;&#xA;LDDE22 AS \&quot;LDDE-Delai maximum souhaite\&quot;,&#xD;&#xA;LDDE23 AS \&quot;LDDE-Date naissance attendue\&quot;,&#xD;&#xA;LDPMCA AS \&quot;LDPM-Code emplacement\&quot;,&#xD;&#xA;LDDE24 AS \&quot;LDDE-Date archivage\&quot;,&#xD;&#xA;LDDE25 AS \&quot;LDDE-Lieu stockage archivage\&quot;,&#xD;&#xA;LDDE30 AS \&quot;LDDE-Famille prioritaire\&quot;,&#xD;&#xA;LDDE26 AS \&quot;LDDE-Code garant oblig attribut\&quot;,&#xD;&#xA;LDDE27 AS \&quot;LDDE-Type garantie attribution\&quot;,&#xD;&#xA;LDAICA AS \&quot;LDAI-Code avis interne\&quot;,&#xD;&#xA;LDALCA AS \&quot;LDAL-Code etat logement\&quot;,&#xD;&#xA;GVTQRG AS \&quot;GVTQ-Cle tiers-qualite\&quot;,&#xD;&#xA;LDDE28 AS \&quot;LDDE-Traitemt avec DDL en cours\&quot;,&#xD;&#xA;LDDE29 AS \&quot;LDDE-Localisation pres du logt\&quot;,&#xD;&#xA;LDDE32 AS \&quot;LDDE-Code complement 1\&quot;,&#xD;&#xA;LDDE33 AS \&quot;LDDE-Code complement 2\&quot;,&#xD;&#xA;LDDE34 AS \&quot;LDDE-Complement 3\&quot;,&#xD;&#xA;LDDE35 AS \&quot;LDDE-Complement 4\&quot;,&#xD;&#xA;LDDE36 AS \&quot;LDDE-Type de demandeur\&quot;,&#xD;&#xA;PACPCA AS \&quot;PACP-Categorie plafond\&quot;,&#xD;&#xA;LVEZCD AS \&quot;LVEZ-Date de validite\&quot;,&#xD;&#xA;PAZRCA AS \&quot;PAZR-Code zone geographique ress\&quot;,&#xD;&#xA;LDDE37 AS \&quot;LDDE-Revenu imposable\&quot;,&#xD;&#xA;LDDE38 AS \&quot;LDDE-Annee revenu\&quot;,&#xD;&#xA;LDDE39 AS \&quot;LDDE-Montant plafond PLA\&quot;,&#xD;&#xA;LDDE40 AS \&quot;LDDE-Pourcentage plafond PLA\&quot;,&#xD;&#xA;LDDE41 AS \&quot;LDDE-Date calcul\&quot;,&#xD;&#xA;LDDE42 AS \&quot;LDDE-Heure calcul\&quot;,&#xD;&#xA;LDDE43 AS \&quot;LDDE-Nb enfants a naitre\&quot;,&#xD;&#xA;LDDE44 AS \&quot;LDDE-Date jugement expulsion\&quot;,&#xD;&#xA;LDDE45 AS \&quot;LDDE-Autre motif particulier\&quot;,&#xD;&#xA;LDDE46 AS \&quot;LDDE-Demande de logement adapte\&quot;,&#xD;&#xA;LDDE48 AS \&quot;LDDE-Renouv voie electronique\&quot;,&#xD;&#xA;LDDE49 AS \&quot;LDDE-Date demande initiale\&quot;,&#xD;&#xA;LDDE50 AS \&quot;LDDE-Filler 1\&quot;,&#xD;&#xA;LDDE51 AS \&quot;LDDE-Filler 2\&quot;,&#xD;&#xA;LDDE52 AS \&quot;LDDE-Filler 3\&quot;,&#xD;&#xA;LDDE53 AS \&quot;Mutation\&quot;,&#xD;&#xA;LDDE54 AS \&quot;LDDE-Filler 5\&quot;,&#xD;&#xA;LDDE55 AS \&quot;LDDE-Filler 6\&quot;,&#xD;&#xA;LDDE56 AS \&quot;LDDE-Filler 7\&quot;,&#xD;&#xA;ACAU01 AS \&quot;ACAU-Date de creation\&quot;,&#xD;&#xA;ACAU02 AS \&quot;ACAU-Profil de creation\&quot;,&#xD;&#xA;ACAU03 AS \&quot;ACAU-Date modification\&quot;,&#xD;&#xA;ACAU04 AS \&quot;ACAU-Profil modification\&quot;,&#xD;&#xA;ACAU05 AS \&quot;ACAU-Code suppression\&quot;,&#xD;&#xA;ACAU06 AS \&quot;ACAU-Code supprimable\&quot;,&#xD;&#xA;ACAU07 AS \&quot;ACAU-Code etat\&quot;,&#xD;&#xA;ACRU01 AS \&quot;ACRU-Rang unique\&quot;&#xD;&#xA;FROM LDDED0&#xD;&#xA;WHERE LDDE53='S'&#xD;&#xA;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="as400_id" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;prompt=false&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="true"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVDM_Numero_demande_patrimoine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVME_Numero_menage"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDKC_Code_classe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDTD_Code_modele_demande"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_demande"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDET_Code_etat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDET_Code_etat_detaille"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_etat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_etat_detaille"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Ancien_numero"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Numero_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Numero_externe"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Exception_n___unique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_creat_automatique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_creat_logic_exterieur"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_de_creation___GVHO_Cle_hierarchie_organisa"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_gestionnaire___GVHO_Cle_hierarchie_organis"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_01"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_02"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_03"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_04"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_05"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_06"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_07"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_08"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_09"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVPE_Cle_personne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_fin_validite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_dossier_complet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_dossier_complet"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAMF_Code_motif_annul_demande"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_principal___LDMD_Code_motif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_2___LDMD_Code_motif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_3___LDMD_Code_motif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_4___LDMD_Code_motif"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDGI_Code_origine"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDPR_Code_dossier_presente_par"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_personnes_a_loger"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_droit_de_visite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Deja_locataire_HLM"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDC1_Code_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_2___LDC1_Code_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_3___LDC1_Code_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_4___LDC1_Code_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_de_points"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_disponibil_souhaitee"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Delai_maximum_souhaite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_naissance_attendue"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDPM_Code_emplacement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_archivage"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Lieu_stockage_archivage"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Famille_prioritaire"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_garant_oblig_attribut"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Type_garantie_attribution"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDAI_Code_avis_interne"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDAL_Code_etat_logement"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVTQ_Cle_tiers_qualite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Traitemt_avec_DDL_en_cours"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Localisation_pres_du_logt"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_complement_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_complement_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Complement_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Complement_4"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Type_de_demandeur"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACP_Categorie_plafond"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVEZ_Date_de_validite"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAZR_Code_zone_geographique_ress"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Revenu_imposable"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Annee_revenu"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Montant_plafond_PLA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Pourcentage_plafond_PLA"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_calcul"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Heure_calcul"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_enfants_a_naitre"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_jugement_expulsion"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Autre_motif_particulier"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Demande_de_logement_adapte"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Renouv_voie_electronique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_demande_initiale"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_1"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_2"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_3"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mutation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_5"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_6"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_7"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Date_de_creation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Profil_de_creation"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Date_modification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Profil_modification"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_suppression"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_supprimable"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_etat"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACRU_Rang_unique"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_2">
+      <column comment="" defaultValue="" key="false" length="7" name="LVDM_Numero_demande_patrimoine" nullable="false" originalDbColumnName="LVDM-Numero demande patrimoine" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDKC_Code_classe" nullable="false" originalDbColumnName="LDKC-Code classe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDTD_Code_modele_demande" nullable="false" originalDbColumnName="LDTD-Code modele demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande" nullable="false" originalDbColumnName="LDDE-Date demande" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="LDET_Code_etat" nullable="false" originalDbColumnName="LDET-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDET_Code_etat_detaille" nullable="false" originalDbColumnName="LDET-Code etat detaille" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat" nullable="false" originalDbColumnName="LDDE-Date etat" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat_detaille" nullable="false" originalDbColumnName="LDDE-Date etat detaille" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Ancien_numero" nullable="false" originalDbColumnName="LDDE-Ancien numero" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_interne" nullable="false" originalDbColumnName="LDDE-Numero interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_externe" nullable="false" originalDbColumnName="LDDE-Numero externe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Exception_n___unique" nullable="false" originalDbColumnName="LDDE-Exception n�� unique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_automatique" nullable="false" originalDbColumnName="LDDE-Code creat automatique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_logic_exterieur" nullable="false" originalDbColumnName="LDDE-Code creat logic exterieur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_de_creation___GVHO_Cle_hierarchie_organisa" nullable="false" originalDbColumnName="Service de creation | GVHO-Cle hierarchie organisa" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_gestionnaire___GVHO_Cle_hierarchie_organis" nullable="false" originalDbColumnName="Service gestionnaire | GVHO-Cle hierarchie organis" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_01" nullable="false" originalDbColumnName="GVHO-Niv 01" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_02" nullable="false" originalDbColumnName="GVHO-Niv 02" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_03" nullable="false" originalDbColumnName="GVHO-Niv 03" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_04" nullable="false" originalDbColumnName="GVHO-Niv 04" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_05" nullable="false" originalDbColumnName="GVHO-Niv 05" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_06" nullable="false" originalDbColumnName="GVHO-Niv 06" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_07" nullable="false" originalDbColumnName="GVHO-Niv 07" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_08" nullable="false" originalDbColumnName="GVHO-Niv 08" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_09" nullable="false" originalDbColumnName="GVHO-Niv 09" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o" nullable="false" originalDbColumnName="Service affaire suivie par | GVHO-Cle hierarchie o" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVPE_Cle_personne" nullable="false" originalDbColumnName="GVPE-Cle personne" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_fin_validite" nullable="false" originalDbColumnName="LDDE-Date fin validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_dossier_complet" nullable="false" originalDbColumnName="LDDE-Code dossier complet" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_dossier_complet" nullable="false" originalDbColumnName="LDDE-Date dossier complet" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAMF_Code_motif_annul_demande" nullable="false" originalDbColumnName="PAMF-Code motif annul demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_principal___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif principal | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_2___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 2 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_3___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 3 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_4___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 4 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDGI_Code_origine" nullable="false" originalDbColumnName="LDGI-Code origine" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPR_Code_dossier_presente_par" nullable="false" originalDbColumnName="LDPR-Code dossier presente par" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_personnes_a_loger" nullable="false" originalDbColumnName="LDDE-Nb personnes a loger" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_droit_de_visite" nullable="false" originalDbColumnName="LDDE-Nb droit de visite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Deja_locataire_HLM" nullable="false" originalDbColumnName="LDDE-Deja locataire HLM" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDC1_Code_interne" nullable="false" originalDbColumnName="LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_2___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 2 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_3___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 3 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_4___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 4 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_de_points" nullable="false" originalDbColumnName="LDDE-Nb de points" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_disponibil_souhaitee" nullable="false" originalDbColumnName="LDDE-Date disponibil souhaitee" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Delai_maximum_souhaite" nullable="false" originalDbColumnName="LDDE-Delai maximum souhaite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_naissance_attendue" nullable="false" originalDbColumnName="LDDE-Date naissance attendue" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPM_Code_emplacement" nullable="false" originalDbColumnName="LDPM-Code emplacement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_archivage" nullable="false" originalDbColumnName="LDDE-Date archivage" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="LDDE_Lieu_stockage_archivage" nullable="false" originalDbColumnName="LDDE-Lieu stockage archivage" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Famille_prioritaire" nullable="false" originalDbColumnName="LDDE-Famille prioritaire" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_garant_oblig_attribut" nullable="false" originalDbColumnName="LDDE-Code garant oblig attribut" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Type_garantie_attribution" nullable="false" originalDbColumnName="LDDE-Type garantie attribution" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAI_Code_avis_interne" nullable="false" originalDbColumnName="LDAI-Code avis interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAL_Code_etat_logement" nullable="false" originalDbColumnName="LDAL-Code etat logement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVTQ_Cle_tiers_qualite" nullable="false" originalDbColumnName="GVTQ-Cle tiers-qualite" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Traitemt_avec_DDL_en_cours" nullable="false" originalDbColumnName="LDDE-Traitemt avec DDL en cours" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Localisation_pres_du_logt" nullable="false" originalDbColumnName="LDDE-Localisation pres du logt" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_1" nullable="false" originalDbColumnName="LDDE-Code complement 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_2" nullable="false" originalDbColumnName="LDDE-Code complement 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_3" nullable="false" originalDbColumnName="LDDE-Complement 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_4" nullable="false" originalDbColumnName="LDDE-Complement 4" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Type_de_demandeur" nullable="false" originalDbColumnName="LDDE-Type de demandeur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PACP_Categorie_plafond" nullable="false" originalDbColumnName="PACP-Categorie plafond" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LVEZ_Date_de_validite" nullable="false" originalDbColumnName="LVEZ-Date de validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAZR_Code_zone_geographique_ress" nullable="false" originalDbColumnName="PAZR-Code zone geographique ress" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Revenu_imposable" nullable="false" originalDbColumnName="LDDE-Revenu imposable" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="LDDE_Annee_revenu" nullable="false" originalDbColumnName="LDDE-Annee revenu" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="LDDE_Montant_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Montant plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LDDE_Pourcentage_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Pourcentage plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_calcul" nullable="false" originalDbColumnName="LDDE-Date calcul" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LDDE_Heure_calcul" nullable="false" originalDbColumnName="LDDE-Heure calcul" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="LDDE_Nb_enfants_a_naitre" nullable="false" originalDbColumnName="LDDE-Nb enfants a naitre" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_jugement_expulsion" nullable="false" originalDbColumnName="LDDE-Date jugement expulsion" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="LDDE_Autre_motif_particulier" nullable="false" originalDbColumnName="LDDE-Autre motif particulier" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Demande_de_logement_adapte" nullable="false" originalDbColumnName="LDDE-Demande de logement adapte" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Renouv_voie_electronique" nullable="false" originalDbColumnName="LDDE-Renouv voie electronique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande_initiale" nullable="false" originalDbColumnName="LDDE-Date demande initiale" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_1" nullable="false" originalDbColumnName="LDDE-Filler 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_2" nullable="false" originalDbColumnName="LDDE-Filler 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_3" nullable="false" originalDbColumnName="LDDE-Filler 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mutation" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="LDDE_Filler_5" nullable="false" originalDbColumnName="LDDE-Filler 5" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Filler_6" nullable="false" originalDbColumnName="LDDE-Filler 6" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Filler_7" nullable="false" originalDbColumnName="LDDE-Filler 7" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_de_creation" nullable="false" originalDbColumnName="ACAU-Date de creation" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_de_creation" nullable="false" originalDbColumnName="ACAU-Profil de creation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_modification" nullable="false" originalDbColumnName="ACAU-Date modification" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_modification" nullable="false" originalDbColumnName="ACAU-Profil modification" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_suppression" nullable="false" originalDbColumnName="ACAU-Code suppression" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_supprimable" nullable="false" originalDbColumnName="ACAU-Code supprimable" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_etat" nullable="false" originalDbColumnName="ACAU-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACRU_Rang_unique" nullable="false" originalDbColumnName="ACRU-Rang unique" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_OF1uYJaHEeqOCLYX2GnHzQ-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="out1">
+      <column comment="" defaultValue="" key="false" length="7" name="LVDM_Numero_demande_patrimoine" nullable="false" originalDbColumnName="LVDM-Numero demande patrimoine" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="NOM_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="PRE_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDKC_Code_classe" nullable="false" originalDbColumnName="LDKC-Code classe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDTD_Code_modele_demande" nullable="false" originalDbColumnName="LDTD-Code modele demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande" nullable="false" originalDbColumnName="LDDE-Date demande" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="LDET_Code_etat" nullable="false" originalDbColumnName="LDET-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDET_Code_etat_detaille" nullable="false" originalDbColumnName="LDET-Code etat detaille" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat" nullable="false" originalDbColumnName="LDDE-Date etat" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat_detaille" nullable="false" originalDbColumnName="LDDE-Date etat detaille" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Ancien_numero" nullable="false" originalDbColumnName="LDDE-Ancien numero" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_interne" nullable="false" originalDbColumnName="LDDE-Numero interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_externe" nullable="false" originalDbColumnName="LDDE-Numero externe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Exception_n___unique" nullable="false" originalDbColumnName="LDDE-Exception n�� unique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_automatique" nullable="false" originalDbColumnName="LDDE-Code creat automatique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_logic_exterieur" nullable="false" originalDbColumnName="LDDE-Code creat logic exterieur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_de_creation___GVHO_Cle_hierarchie_organisa" nullable="false" originalDbColumnName="Service de creation | GVHO-Cle hierarchie organisa" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_gestionnaire___GVHO_Cle_hierarchie_organis" nullable="false" originalDbColumnName="Service gestionnaire | GVHO-Cle hierarchie organis" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_01" nullable="false" originalDbColumnName="GVHO-Niv 01" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_02" nullable="false" originalDbColumnName="GVHO-Niv 02" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_03" nullable="false" originalDbColumnName="GVHO-Niv 03" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_04" nullable="false" originalDbColumnName="GVHO-Niv 04" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_05" nullable="false" originalDbColumnName="GVHO-Niv 05" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_06" nullable="false" originalDbColumnName="GVHO-Niv 06" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_07" nullable="false" originalDbColumnName="GVHO-Niv 07" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_08" nullable="false" originalDbColumnName="GVHO-Niv 08" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_09" nullable="false" originalDbColumnName="GVHO-Niv 09" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o" nullable="false" originalDbColumnName="Service affaire suivie par | GVHO-Cle hierarchie o" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVPE_Cle_personne" nullable="false" originalDbColumnName="GVPE-Cle personne" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_fin_validite" nullable="false" originalDbColumnName="LDDE-Date fin validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_dossier_complet" nullable="false" originalDbColumnName="LDDE-Code dossier complet" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_dossier_complet" nullable="false" originalDbColumnName="LDDE-Date dossier complet" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAMF_Code_motif_annul_demande" nullable="false" originalDbColumnName="PAMF-Code motif annul demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_principal___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif principal | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_2___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 2 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_3___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 3 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_4___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 4 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDGI_Code_origine" nullable="false" originalDbColumnName="LDGI-Code origine" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPR_Code_dossier_presente_par" nullable="false" originalDbColumnName="LDPR-Code dossier presente par" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_personnes_a_loger" nullable="false" originalDbColumnName="LDDE-Nb personnes a loger" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_droit_de_visite" nullable="false" originalDbColumnName="LDDE-Nb droit de visite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Deja_locataire_HLM" nullable="false" originalDbColumnName="LDDE-Deja locataire HLM" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDC1_Code_interne" nullable="false" originalDbColumnName="LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_2___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 2 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_3___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 3 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_4___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 4 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_de_points" nullable="false" originalDbColumnName="LDDE-Nb de points" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_disponibil_souhaitee" nullable="false" originalDbColumnName="LDDE-Date disponibil souhaitee" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Delai_maximum_souhaite" nullable="false" originalDbColumnName="LDDE-Delai maximum souhaite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_naissance_attendue" nullable="false" originalDbColumnName="LDDE-Date naissance attendue" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPM_Code_emplacement" nullable="false" originalDbColumnName="LDPM-Code emplacement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_archivage" nullable="false" originalDbColumnName="LDDE-Date archivage" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="LDDE_Lieu_stockage_archivage" nullable="false" originalDbColumnName="LDDE-Lieu stockage archivage" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Famille_prioritaire" nullable="false" originalDbColumnName="LDDE-Famille prioritaire" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_garant_oblig_attribut" nullable="false" originalDbColumnName="LDDE-Code garant oblig attribut" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Type_garantie_attribution" nullable="false" originalDbColumnName="LDDE-Type garantie attribution" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAI_Code_avis_interne" nullable="false" originalDbColumnName="LDAI-Code avis interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAL_Code_etat_logement" nullable="false" originalDbColumnName="LDAL-Code etat logement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVTQ_Cle_tiers_qualite" nullable="false" originalDbColumnName="GVTQ-Cle tiers-qualite" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Traitemt_avec_DDL_en_cours" nullable="false" originalDbColumnName="LDDE-Traitemt avec DDL en cours" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Localisation_pres_du_logt" nullable="false" originalDbColumnName="LDDE-Localisation pres du logt" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_1" nullable="false" originalDbColumnName="LDDE-Code complement 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_2" nullable="false" originalDbColumnName="LDDE-Code complement 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_3" nullable="false" originalDbColumnName="LDDE-Complement 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_4" nullable="false" originalDbColumnName="LDDE-Complement 4" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Type_de_demandeur" nullable="false" originalDbColumnName="LDDE-Type de demandeur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PACP_Categorie_plafond" nullable="false" originalDbColumnName="PACP-Categorie plafond" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LVEZ_Date_de_validite" nullable="false" originalDbColumnName="LVEZ-Date de validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAZR_Code_zone_geographique_ress" nullable="false" originalDbColumnName="PAZR-Code zone geographique ress" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Revenu_imposable" nullable="false" originalDbColumnName="LDDE-Revenu imposable" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="LDDE_Annee_revenu" nullable="false" originalDbColumnName="LDDE-Annee revenu" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="LDDE_Montant_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Montant plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LDDE_Pourcentage_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Pourcentage plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_calcul" nullable="false" originalDbColumnName="LDDE-Date calcul" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LDDE_Heure_calcul" nullable="false" originalDbColumnName="LDDE-Heure calcul" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="LDDE_Nb_enfants_a_naitre" nullable="false" originalDbColumnName="LDDE-Nb enfants a naitre" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_jugement_expulsion" nullable="false" originalDbColumnName="LDDE-Date jugement expulsion" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="LDDE_Autre_motif_particulier" nullable="false" originalDbColumnName="LDDE-Autre motif particulier" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Demande_de_logement_adapte" nullable="false" originalDbColumnName="LDDE-Demande de logement adapte" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Renouv_voie_electronique" nullable="false" originalDbColumnName="LDDE-Renouv voie electronique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande_initiale" nullable="false" originalDbColumnName="LDDE-Date demande initiale" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_1" nullable="false" originalDbColumnName="LDDE-Filler 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_2" nullable="false" originalDbColumnName="LDDE-Filler 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_3" nullable="false" originalDbColumnName="LDDE-Filler 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mutation" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="LDDE_Filler_5" nullable="false" originalDbColumnName="LDDE-Filler 5" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Filler_6" nullable="false" originalDbColumnName="LDDE-Filler 6" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Filler_7" nullable="false" originalDbColumnName="LDDE-Filler 7" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_de_creation" nullable="false" originalDbColumnName="ACAU-Date de creation" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_de_creation" nullable="false" originalDbColumnName="ACAU-Profil de creation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_modification" nullable="false" originalDbColumnName="ACAU-Date modification" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_modification" nullable="false" originalDbColumnName="ACAU-Profil modification" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_suppression" nullable="false" originalDbColumnName="ACAU-Code suppression" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_supprimable" nullable="false" originalDbColumnName="ACAU-Code supprimable" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_etat" nullable="false" originalDbColumnName="ACAU-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACRU_Rang_unique" nullable="false" originalDbColumnName="ACRU-Rang unique" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties shellMaximized="true"/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+      <outputTables sizeState="INTERMEDIATE" name="out1">
+        <mapperTableEntries name="LVDM_Numero_demande_patrimoine" expression="row1.LVDM_Numero_demande_patrimoine " type="id_Integer"/>
+        <mapperTableEntries name="LVME_Numero_menage" expression="row1.LVME_Numero_menage " type="id_Integer"/>
+        <mapperTableEntries name="NOM_CLIENT" expression="row2.NOM_CLIENT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRE_CLIENT" expression="row2.PRE_CLIENT " type="id_String" nullable="true"/>
+        <mapperTableEntries name="LDKC_Code_classe" expression="row1.LDKC_Code_classe " type="id_String"/>
+        <mapperTableEntries name="LDTD_Code_modele_demande" expression="row1.LDTD_Code_modele_demande " type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_demande" expression="row1.LDDE_Date_demande " type="id_Date"/>
+        <mapperTableEntries name="LDET_Code_etat" expression="row1.LDET_Code_etat " type="id_String"/>
+        <mapperTableEntries name="LDET_Code_etat_detaille" expression="row1.LDET_Code_etat_detaille " type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_etat" expression="row1.LDDE_Date_etat " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Date_etat_detaille" expression="row1.LDDE_Date_etat_detaille " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Ancien_numero" expression="row1.LDDE_Ancien_numero " type="id_String"/>
+        <mapperTableEntries name="LDDE_Numero_interne" expression="row1.LDDE_Numero_interne " type="id_String"/>
+        <mapperTableEntries name="LDDE_Numero_externe" expression="row1.LDDE_Numero_externe " type="id_String"/>
+        <mapperTableEntries name="LDDE_Exception_n___unique" expression="row1.LDDE_Exception_n___unique " type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_creat_automatique" expression="row1.LDDE_Code_creat_automatique " type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_creat_logic_exterieur" expression="row1.LDDE_Code_creat_logic_exterieur " type="id_String"/>
+        <mapperTableEntries name="Service_de_creation___GVHO_Cle_hierarchie_organisa" expression="row1.Service_de_creation___GVHO_Cle_hierarchie_organisa " type="id_Float"/>
+        <mapperTableEntries name="Service_gestionnaire___GVHO_Cle_hierarchie_organis" expression="row1.Service_gestionnaire___GVHO_Cle_hierarchie_organis " type="id_Float"/>
+        <mapperTableEntries name="GVHO_Niv_01" expression="row1.GVHO_Niv_01 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_02" expression="row1.GVHO_Niv_02 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_03" expression="row1.GVHO_Niv_03 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_04" expression="row1.GVHO_Niv_04 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_05" expression="row1.GVHO_Niv_05 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_06" expression="row1.GVHO_Niv_06 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_07" expression="row1.GVHO_Niv_07 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_08" expression="row1.GVHO_Niv_08 " type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_09" expression="row1.GVHO_Niv_09 " type="id_String"/>
+        <mapperTableEntries name="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o" expression="row1.Service_affaire_suivie_par___GVHO_Cle_hierarchie_o " type="id_Float"/>
+        <mapperTableEntries name="GVPE_Cle_personne" expression="row1.GVPE_Cle_personne " type="id_Float"/>
+        <mapperTableEntries name="LDDE_Date_fin_validite" expression="row1.LDDE_Date_fin_validite " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Code_dossier_complet" expression="row1.LDDE_Code_dossier_complet " type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_dossier_complet" expression="row1.LDDE_Date_dossier_complet " type="id_Date"/>
+        <mapperTableEntries name="PAMF_Code_motif_annul_demande" expression="row1.PAMF_Code_motif_annul_demande " type="id_String"/>
+        <mapperTableEntries name="Code_motif_principal___LDMD_Code_motif" expression="row1.Code_motif_principal___LDMD_Code_motif " type="id_String"/>
+        <mapperTableEntries name="Code_motif_2___LDMD_Code_motif" expression="row1.Code_motif_2___LDMD_Code_motif " type="id_String"/>
+        <mapperTableEntries name="Code_motif_3___LDMD_Code_motif" expression="row1.Code_motif_3___LDMD_Code_motif " type="id_String"/>
+        <mapperTableEntries name="Code_motif_4___LDMD_Code_motif" expression="row1.Code_motif_4___LDMD_Code_motif " type="id_String"/>
+        <mapperTableEntries name="LDGI_Code_origine" expression="row1.LDGI_Code_origine " type="id_String"/>
+        <mapperTableEntries name="LDPR_Code_dossier_presente_par" expression="row1.LDPR_Code_dossier_presente_par " type="id_String"/>
+        <mapperTableEntries name="LDDE_Nb_personnes_a_loger" expression="row1.LDDE_Nb_personnes_a_loger " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Nb_droit_de_visite" expression="row1.LDDE_Nb_droit_de_visite " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Deja_locataire_HLM" expression="row1.LDDE_Deja_locataire_HLM " type="id_String"/>
+        <mapperTableEntries name="LDC1_Code_interne" expression="row1.LDC1_Code_interne " type="id_String"/>
+        <mapperTableEntries name="Code_interne_2___LDC1_Code_interne" expression="row1.Code_interne_2___LDC1_Code_interne " type="id_String"/>
+        <mapperTableEntries name="Code_interne_3___LDC1_Code_interne" expression="row1.Code_interne_3___LDC1_Code_interne " type="id_String"/>
+        <mapperTableEntries name="Code_interne_4___LDC1_Code_interne" expression="row1.Code_interne_4___LDC1_Code_interne " type="id_String"/>
+        <mapperTableEntries name="LDDE_Nb_de_points" expression="row1.LDDE_Nb_de_points " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_disponibil_souhaitee" expression="row1.LDDE_Date_disponibil_souhaitee " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Delai_maximum_souhaite" expression="row1.LDDE_Delai_maximum_souhaite " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_naissance_attendue" expression="row1.LDDE_Date_naissance_attendue " type="id_Date"/>
+        <mapperTableEntries name="LDPM_Code_emplacement" expression="row1.LDPM_Code_emplacement " type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_archivage" expression="row1.LDDE_Date_archivage " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Lieu_stockage_archivage" expression="row1.LDDE_Lieu_stockage_archivage " type="id_String"/>
+        <mapperTableEntries name="LDDE_Famille_prioritaire" expression="row1.LDDE_Famille_prioritaire " type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_garant_oblig_attribut" expression="row1.LDDE_Code_garant_oblig_attribut " type="id_String"/>
+        <mapperTableEntries name="LDDE_Type_garantie_attribution" expression="row1.LDDE_Type_garantie_attribution " type="id_String"/>
+        <mapperTableEntries name="LDAI_Code_avis_interne" expression="row1.LDAI_Code_avis_interne " type="id_String"/>
+        <mapperTableEntries name="LDAL_Code_etat_logement" expression="row1.LDAL_Code_etat_logement " type="id_String"/>
+        <mapperTableEntries name="GVTQ_Cle_tiers_qualite" expression="row1.GVTQ_Cle_tiers_qualite " type="id_Float"/>
+        <mapperTableEntries name="LDDE_Traitemt_avec_DDL_en_cours" expression="row1.LDDE_Traitemt_avec_DDL_en_cours " type="id_String"/>
+        <mapperTableEntries name="LDDE_Localisation_pres_du_logt" expression="row1.LDDE_Localisation_pres_du_logt " type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_complement_1" expression="row1.LDDE_Code_complement_1 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_complement_2" expression="row1.LDDE_Code_complement_2 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Complement_3" expression="row1.LDDE_Complement_3 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Complement_4" expression="row1.LDDE_Complement_4 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Type_de_demandeur" expression="row1.LDDE_Type_de_demandeur " type="id_String"/>
+        <mapperTableEntries name="PACP_Categorie_plafond" expression="row1.PACP_Categorie_plafond " type="id_String"/>
+        <mapperTableEntries name="LVEZ_Date_de_validite" expression="row1.LVEZ_Date_de_validite " type="id_Date"/>
+        <mapperTableEntries name="PAZR_Code_zone_geographique_ress" expression="row1.PAZR_Code_zone_geographique_ress " type="id_String"/>
+        <mapperTableEntries name="LDDE_Revenu_imposable" expression="row1.LDDE_Revenu_imposable " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Annee_revenu" expression="row1.LDDE_Annee_revenu " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Montant_plafond_PLA" expression="row1.LDDE_Montant_plafond_PLA " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Pourcentage_plafond_PLA" expression="row1.LDDE_Pourcentage_plafond_PLA " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_calcul" expression="row1.LDDE_Date_calcul " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Heure_calcul" expression="row1.LDDE_Heure_calcul " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Nb_enfants_a_naitre" expression="row1.LDDE_Nb_enfants_a_naitre " type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_jugement_expulsion" expression="row1.LDDE_Date_jugement_expulsion " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Autre_motif_particulier" expression="row1.LDDE_Autre_motif_particulier " type="id_String"/>
+        <mapperTableEntries name="LDDE_Demande_de_logement_adapte" expression="row1.LDDE_Demande_de_logement_adapte " type="id_String"/>
+        <mapperTableEntries name="LDDE_Renouv_voie_electronique" expression="row1.LDDE_Renouv_voie_electronique " type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_demande_initiale" expression="row1.LDDE_Date_demande_initiale " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Filler_1" expression="row1.LDDE_Filler_1 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_2" expression="row1.LDDE_Filler_2 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_3" expression="row1.LDDE_Filler_3 " type="id_String"/>
+        <mapperTableEntries name="Mutation" expression="row1.Mutation " type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_5" expression="row1.LDDE_Filler_5 " type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_6" expression="row1.LDDE_Filler_6 " type="id_Date"/>
+        <mapperTableEntries name="LDDE_Filler_7" expression="row1.LDDE_Filler_7 " type="id_String"/>
+        <mapperTableEntries name="ACAU_Date_de_creation" expression="row1.ACAU_Date_de_creation " type="id_Date"/>
+        <mapperTableEntries name="ACAU_Profil_de_creation" expression="row1.ACAU_Profil_de_creation " type="id_Float"/>
+        <mapperTableEntries name="ACAU_Date_modification" expression="row1.ACAU_Date_modification " type="id_Date"/>
+        <mapperTableEntries name="ACAU_Profil_modification" expression="row1.ACAU_Profil_modification " type="id_Float"/>
+        <mapperTableEntries name="ACAU_Code_suppression" expression="row1.ACAU_Code_suppression " type="id_String"/>
+        <mapperTableEntries name="ACAU_Code_supprimable" expression="row1.ACAU_Code_supprimable " type="id_String"/>
+        <mapperTableEntries name="ACAU_Code_etat" expression="row1.ACAU_Code_etat " type="id_String"/>
+        <mapperTableEntries name="ACRU_Rang_unique" expression="row1.ACRU_Rang_unique " type="id_Float"/>
+      </outputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row1" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="LVDM_Numero_demande_patrimoine" type="id_Integer"/>
+        <mapperTableEntries name="LVME_Numero_menage" type="id_Integer"/>
+        <mapperTableEntries name="LDKC_Code_classe" type="id_String"/>
+        <mapperTableEntries name="LDTD_Code_modele_demande" type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_demande" type="id_Date"/>
+        <mapperTableEntries name="LDET_Code_etat" type="id_String"/>
+        <mapperTableEntries name="LDET_Code_etat_detaille" type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_etat" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Date_etat_detaille" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Ancien_numero" type="id_String"/>
+        <mapperTableEntries name="LDDE_Numero_interne" type="id_String"/>
+        <mapperTableEntries name="LDDE_Numero_externe" type="id_String"/>
+        <mapperTableEntries name="LDDE_Exception_n___unique" type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_creat_automatique" type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_creat_logic_exterieur" type="id_String"/>
+        <mapperTableEntries name="Service_de_creation___GVHO_Cle_hierarchie_organisa" type="id_Float"/>
+        <mapperTableEntries name="Service_gestionnaire___GVHO_Cle_hierarchie_organis" type="id_Float"/>
+        <mapperTableEntries name="GVHO_Niv_01" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_02" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_03" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_04" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_05" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_06" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_07" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_08" type="id_String"/>
+        <mapperTableEntries name="GVHO_Niv_09" type="id_String"/>
+        <mapperTableEntries name="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o" type="id_Float"/>
+        <mapperTableEntries name="GVPE_Cle_personne" type="id_Float"/>
+        <mapperTableEntries name="LDDE_Date_fin_validite" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Code_dossier_complet" type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_dossier_complet" type="id_Date"/>
+        <mapperTableEntries name="PAMF_Code_motif_annul_demande" type="id_String"/>
+        <mapperTableEntries name="Code_motif_principal___LDMD_Code_motif" type="id_String"/>
+        <mapperTableEntries name="Code_motif_2___LDMD_Code_motif" type="id_String"/>
+        <mapperTableEntries name="Code_motif_3___LDMD_Code_motif" type="id_String"/>
+        <mapperTableEntries name="Code_motif_4___LDMD_Code_motif" type="id_String"/>
+        <mapperTableEntries name="LDGI_Code_origine" type="id_String"/>
+        <mapperTableEntries name="LDPR_Code_dossier_presente_par" type="id_String"/>
+        <mapperTableEntries name="LDDE_Nb_personnes_a_loger" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Nb_droit_de_visite" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Deja_locataire_HLM" type="id_String"/>
+        <mapperTableEntries name="LDC1_Code_interne" type="id_String"/>
+        <mapperTableEntries name="Code_interne_2___LDC1_Code_interne" type="id_String"/>
+        <mapperTableEntries name="Code_interne_3___LDC1_Code_interne" type="id_String"/>
+        <mapperTableEntries name="Code_interne_4___LDC1_Code_interne" type="id_String"/>
+        <mapperTableEntries name="LDDE_Nb_de_points" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_disponibil_souhaitee" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Delai_maximum_souhaite" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_naissance_attendue" type="id_Date"/>
+        <mapperTableEntries name="LDPM_Code_emplacement" type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_archivage" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Lieu_stockage_archivage" type="id_String"/>
+        <mapperTableEntries name="LDDE_Famille_prioritaire" type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_garant_oblig_attribut" type="id_String"/>
+        <mapperTableEntries name="LDDE_Type_garantie_attribution" type="id_String"/>
+        <mapperTableEntries name="LDAI_Code_avis_interne" type="id_String"/>
+        <mapperTableEntries name="LDAL_Code_etat_logement" type="id_String"/>
+        <mapperTableEntries name="GVTQ_Cle_tiers_qualite" type="id_Float"/>
+        <mapperTableEntries name="LDDE_Traitemt_avec_DDL_en_cours" type="id_String"/>
+        <mapperTableEntries name="LDDE_Localisation_pres_du_logt" type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_complement_1" type="id_String"/>
+        <mapperTableEntries name="LDDE_Code_complement_2" type="id_String"/>
+        <mapperTableEntries name="LDDE_Complement_3" type="id_String"/>
+        <mapperTableEntries name="LDDE_Complement_4" type="id_String"/>
+        <mapperTableEntries name="LDDE_Type_de_demandeur" type="id_String"/>
+        <mapperTableEntries name="PACP_Categorie_plafond" type="id_String"/>
+        <mapperTableEntries name="LVEZ_Date_de_validite" type="id_Date"/>
+        <mapperTableEntries name="PAZR_Code_zone_geographique_ress" type="id_String"/>
+        <mapperTableEntries name="LDDE_Revenu_imposable" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Annee_revenu" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Montant_plafond_PLA" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Pourcentage_plafond_PLA" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_calcul" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Heure_calcul" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Nb_enfants_a_naitre" type="id_BigDecimal"/>
+        <mapperTableEntries name="LDDE_Date_jugement_expulsion" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Autre_motif_particulier" type="id_String"/>
+        <mapperTableEntries name="LDDE_Demande_de_logement_adapte" type="id_String"/>
+        <mapperTableEntries name="LDDE_Renouv_voie_electronique" type="id_String"/>
+        <mapperTableEntries name="LDDE_Date_demande_initiale" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Filler_1" type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_2" type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_3" type="id_String"/>
+        <mapperTableEntries name="Mutation" type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_5" type="id_String"/>
+        <mapperTableEntries name="LDDE_Filler_6" type="id_Date"/>
+        <mapperTableEntries name="LDDE_Filler_7" type="id_String"/>
+        <mapperTableEntries name="ACAU_Date_de_creation" type="id_Date"/>
+        <mapperTableEntries name="ACAU_Profil_de_creation" type="id_Float"/>
+        <mapperTableEntries name="ACAU_Date_modification" type="id_Date"/>
+        <mapperTableEntries name="ACAU_Profil_modification" type="id_Float"/>
+        <mapperTableEntries name="ACAU_Code_suppression" type="id_String"/>
+        <mapperTableEntries name="ACAU_Code_supprimable" type="id_String"/>
+        <mapperTableEntries name="ACAU_Code_etat" type="id_String"/>
+        <mapperTableEntries name="ACRU_Rang_unique" type="id_Float"/>
+      </inputTables>
+      <inputTables sizeState="INTERMEDIATE" name="row2" matchingMode="UNIQUE_MATCH" lookupMode="LOAD_ONCE">
+        <mapperTableEntries name="ID_DOSCLIE" expression="row1.LVME_Numero_menage " type="id_Integer" operator="="/>
+        <mapperTableEntries name="NOM_CLIENT" type="id_String" nullable="true"/>
+        <mapperTableEntries name="PRE_CLIENT" type="id_String" nullable="true"/>
+      </inputTables>
+    </nodeData>
+  </node>
+  <node componentName="tMSSqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_1" show="false"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="true"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" value="tDBConnection_1"/>
+    <elementParameter field="TEXT" name="HOST" value="&quot;&quot;" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="DRIVER" value="JTDS" show="false"/>
+    <elementParameter field="TEXT" name="TYPE" value="MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PORT" value="&quot;1433&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DB_SCHEMA" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DBNAME" value="&quot;&quot;" show="false"/>
+    <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:4kzhzOvhSjMPebHTj/rTUrARGdB6Pv8mQZQVDECu" show="false"/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;DOSS_CLIEN&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" value="" show="false"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;&#xD;&#xA;select &#xD;&#xA;ID_DOSCLIE,&#xD;&#xA;NOM_CLIENT,&#xD;&#xA;PRE_CLIENT&#xD;&#xA;from DOSS_CLIEN&#xD;&#xA;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime" show="false"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false" show="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" value="&quot;&quot;" show="false"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" value="id_MSSQL" show="false"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;" show="false"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="ID_DOSCLIE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_CLIENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRE_CLIENT"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tDBInput_1">
+      <column comment="" defaultValue="" key="false" length="10" name="ID_DOSCLIE" nullable="false" pattern="" precision="0" sourceType="INT" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="NOM_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="PRE_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputExcel" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="704" posY="224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tFileOutputExcel_1" show="false"/>
+    <elementParameter field="CHECK" name="VERSION_2007" value="true"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" value="outputStream" show="false"/>
+    <elementParameter field="FILE" name="FILENAME" value="&quot;C:/Users/DKHUON/Desktop/HAPPI/Export/Mutation.xlsx&quot;"/>
+    <elementParameter field="TEXT" name="SHEETNAME" value="&quot;Sheet1&quot;"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="true"/>
+    <elementParameter field="CHECK" name="APPEND_FILE" value="false"/>
+    <elementParameter field="CHECK" name="APPEND_SHEET" value="false" show="false"/>
+    <elementParameter field="CHECK" name="FIRST_CELL_Y_ABSOLUTE" value="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_X" value="0" show="false"/>
+    <elementParameter field="TEXT" name="FIRST_CELL_Y" value="0" show="false"/>
+    <elementParameter field="CHECK" name="KEEP_CELL_FORMATING" value="false" show="false"/>
+    <elementParameter field="CLOSED_LIST" name="FONT" value=""/>
+    <elementParameter field="CHECK" name="IS_ALL_AUTO_SZIE" value="true"/>
+    <elementParameter field="TABLE" name="AUTO_SZIE_SETTING" show="false">
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVDM_Numero_demande_patrimoine"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVME_Numero_menage"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="NOM_CLIENT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PRE_CLIENT"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDKC_Code_classe"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDTD_Code_modele_demande"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_demande"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDET_Code_etat"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDET_Code_etat_detaille"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_etat"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_etat_detaille"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Ancien_numero"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Numero_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Numero_externe"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Exception_n___unique"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_creat_automatique"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_creat_logic_exterieur"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_de_creation___GVHO_Cle_hierarchie_organisa"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_gestionnaire___GVHO_Cle_hierarchie_organis"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_01"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_02"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_03"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_04"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_05"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_06"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_07"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_08"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVHO_Niv_09"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVPE_Cle_personne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_fin_validite"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_dossier_complet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_dossier_complet"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAMF_Code_motif_annul_demande"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_principal___LDMD_Code_motif"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_2___LDMD_Code_motif"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_3___LDMD_Code_motif"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_motif_4___LDMD_Code_motif"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDGI_Code_origine"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDPR_Code_dossier_presente_par"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_personnes_a_loger"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_droit_de_visite"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Deja_locataire_HLM"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDC1_Code_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_2___LDC1_Code_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_3___LDC1_Code_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Code_interne_4___LDC1_Code_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_de_points"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_disponibil_souhaitee"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Delai_maximum_souhaite"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_naissance_attendue"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDPM_Code_emplacement"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_archivage"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Lieu_stockage_archivage"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Famille_prioritaire"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_garant_oblig_attribut"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Type_garantie_attribution"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDAI_Code_avis_interne"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDAL_Code_etat_logement"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="GVTQ_Cle_tiers_qualite"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Traitemt_avec_DDL_en_cours"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Localisation_pres_du_logt"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_complement_1"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Code_complement_2"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Complement_3"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Complement_4"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Type_de_demandeur"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PACP_Categorie_plafond"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LVEZ_Date_de_validite"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="PAZR_Code_zone_geographique_ress"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Revenu_imposable"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Annee_revenu"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Montant_plafond_PLA"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Pourcentage_plafond_PLA"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_calcul"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Heure_calcul"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Nb_enfants_a_naitre"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_jugement_expulsion"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Autre_motif_particulier"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Demande_de_logement_adapte"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Renouv_voie_electronique"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Date_demande_initiale"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_1"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_2"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_3"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="Mutation"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_5"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_6"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="LDDE_Filler_7"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Date_de_creation"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Profil_de_creation"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Date_modification"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Profil_modification"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_suppression"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_supprimable"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACAU_Code_etat"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="ACRU_Rang_unique"/>
+      <elementValue elementRef="IS_AUTO_SIZE" value="false"/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="PROTECT_FILE" value="false"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:pdSwf6NUpLkqZuPxtvqO00x19NqEhb9RAQzrfgJr" show="false"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" value="100" show="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" value="&quot;,&quot;" show="false"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" value="&quot;.&quot;" show="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="RECALCULATE_FORMULA" value="false" show="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" value="100" show="false"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputExcel_1">
+      <column comment="" defaultValue="" key="false" length="7" name="LVDM_Numero_demande_patrimoine" nullable="false" originalDbColumnName="LVDM-Numero demande patrimoine" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LVME_Numero_menage" nullable="false" originalDbColumnName="LVME-Numero menage" pattern="" precision="0" sourceType="NUMERIC" type="id_Integer" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="NOM_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="PRE_CLIENT" nullable="true" pattern="" precision="0" sourceType="VARCHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDKC_Code_classe" nullable="false" originalDbColumnName="LDKC-Code classe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDTD_Code_modele_demande" nullable="false" originalDbColumnName="LDTD-Code modele demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande" nullable="false" originalDbColumnName="LDDE-Date demande" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="2" name="LDET_Code_etat" nullable="false" originalDbColumnName="LDET-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDET_Code_etat_detaille" nullable="false" originalDbColumnName="LDET-Code etat detaille" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat" nullable="false" originalDbColumnName="LDDE-Date etat" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_etat_detaille" nullable="false" originalDbColumnName="LDDE-Date etat detaille" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Ancien_numero" nullable="false" originalDbColumnName="LDDE-Ancien numero" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_interne" nullable="false" originalDbColumnName="LDDE-Numero interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Numero_externe" nullable="false" originalDbColumnName="LDDE-Numero externe" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Exception_n___unique" nullable="false" originalDbColumnName="LDDE-Exception n�� unique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_automatique" nullable="false" originalDbColumnName="LDDE-Code creat automatique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_creat_logic_exterieur" nullable="false" originalDbColumnName="LDDE-Code creat logic exterieur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_de_creation___GVHO_Cle_hierarchie_organisa" nullable="false" originalDbColumnName="Service de creation | GVHO-Cle hierarchie organisa" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_gestionnaire___GVHO_Cle_hierarchie_organis" nullable="false" originalDbColumnName="Service gestionnaire | GVHO-Cle hierarchie organis" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_01" nullable="false" originalDbColumnName="GVHO-Niv 01" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_02" nullable="false" originalDbColumnName="GVHO-Niv 02" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_03" nullable="false" originalDbColumnName="GVHO-Niv 03" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_04" nullable="false" originalDbColumnName="GVHO-Niv 04" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_05" nullable="false" originalDbColumnName="GVHO-Niv 05" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_06" nullable="false" originalDbColumnName="GVHO-Niv 06" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_07" nullable="false" originalDbColumnName="GVHO-Niv 07" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_08" nullable="false" originalDbColumnName="GVHO-Niv 08" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="5" name="GVHO_Niv_09" nullable="false" originalDbColumnName="GVHO-Niv 09" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="Service_affaire_suivie_par___GVHO_Cle_hierarchie_o" nullable="false" originalDbColumnName="Service affaire suivie par | GVHO-Cle hierarchie o" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVPE_Cle_personne" nullable="false" originalDbColumnName="GVPE-Cle personne" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_fin_validite" nullable="false" originalDbColumnName="LDDE-Date fin validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_dossier_complet" nullable="false" originalDbColumnName="LDDE-Code dossier complet" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_dossier_complet" nullable="false" originalDbColumnName="LDDE-Date dossier complet" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAMF_Code_motif_annul_demande" nullable="false" originalDbColumnName="PAMF-Code motif annul demande" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_principal___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif principal | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_2___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 2 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_3___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 3 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_motif_4___LDMD_Code_motif" nullable="false" originalDbColumnName="Code motif 4 | LDMD-Code motif" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDGI_Code_origine" nullable="false" originalDbColumnName="LDGI-Code origine" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPR_Code_dossier_presente_par" nullable="false" originalDbColumnName="LDPR-Code dossier presente par" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_personnes_a_loger" nullable="false" originalDbColumnName="LDDE-Nb personnes a loger" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_droit_de_visite" nullable="false" originalDbColumnName="LDDE-Nb droit de visite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Deja_locataire_HLM" nullable="false" originalDbColumnName="LDDE-Deja locataire HLM" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDC1_Code_interne" nullable="false" originalDbColumnName="LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_2___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 2 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_3___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 3 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="Code_interne_4___LDC1_Code_interne" nullable="false" originalDbColumnName="Code interne 4 | LDC1-Code interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="3" name="LDDE_Nb_de_points" nullable="false" originalDbColumnName="LDDE-Nb de points" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_disponibil_souhaitee" nullable="false" originalDbColumnName="LDDE-Date disponibil souhaitee" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Delai_maximum_souhaite" nullable="false" originalDbColumnName="LDDE-Delai maximum souhaite" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_naissance_attendue" nullable="false" originalDbColumnName="LDDE-Date naissance attendue" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDPM_Code_emplacement" nullable="false" originalDbColumnName="LDPM-Code emplacement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_archivage" nullable="false" originalDbColumnName="LDDE-Date archivage" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="60" name="LDDE_Lieu_stockage_archivage" nullable="false" originalDbColumnName="LDDE-Lieu stockage archivage" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Famille_prioritaire" nullable="false" originalDbColumnName="LDDE-Famille prioritaire" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Code_garant_oblig_attribut" nullable="false" originalDbColumnName="LDDE-Code garant oblig attribut" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Type_garantie_attribution" nullable="false" originalDbColumnName="LDDE-Type garantie attribution" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAI_Code_avis_interne" nullable="false" originalDbColumnName="LDAI-Code avis interne" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDAL_Code_etat_logement" nullable="false" originalDbColumnName="LDAL-Code etat logement" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="GVTQ_Cle_tiers_qualite" nullable="false" originalDbColumnName="GVTQ-Cle tiers-qualite" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Traitemt_avec_DDL_en_cours" nullable="false" originalDbColumnName="LDDE-Traitemt avec DDL en cours" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Localisation_pres_du_logt" nullable="false" originalDbColumnName="LDDE-Localisation pres du logt" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_1" nullable="false" originalDbColumnName="LDDE-Code complement 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Code_complement_2" nullable="false" originalDbColumnName="LDDE-Code complement 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_3" nullable="false" originalDbColumnName="LDDE-Complement 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Complement_4" nullable="false" originalDbColumnName="LDDE-Complement 4" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Type_de_demandeur" nullable="false" originalDbColumnName="LDDE-Type de demandeur" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PACP_Categorie_plafond" nullable="false" originalDbColumnName="PACP-Categorie plafond" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LVEZ_Date_de_validite" nullable="false" originalDbColumnName="LVEZ-Date de validite" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="PAZR_Code_zone_geographique_ress" nullable="false" originalDbColumnName="PAZR-Code zone geographique ress" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="LDDE_Revenu_imposable" nullable="false" originalDbColumnName="LDDE-Revenu imposable" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="4" name="LDDE_Annee_revenu" nullable="false" originalDbColumnName="LDDE-Annee revenu" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="11" name="LDDE_Montant_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Montant plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="5" name="LDDE_Pourcentage_plafond_PLA" nullable="false" originalDbColumnName="LDDE-Pourcentage plafond PLA" pattern="" precision="2" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_calcul" nullable="false" originalDbColumnName="LDDE-Date calcul" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="8" name="LDDE_Heure_calcul" nullable="false" originalDbColumnName="LDDE-Heure calcul" pattern="&quot;HH:mm:ss&quot;" precision="0" sourceType="TIME" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="1" name="LDDE_Nb_enfants_a_naitre" nullable="false" originalDbColumnName="LDDE-Nb enfants a naitre" pattern="" precision="0" sourceType="DECIMAL" type="id_BigDecimal" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_jugement_expulsion" nullable="false" originalDbColumnName="LDDE-Date jugement expulsion" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="40" name="LDDE_Autre_motif_particulier" nullable="false" originalDbColumnName="LDDE-Autre motif particulier" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Demande_de_logement_adapte" nullable="false" originalDbColumnName="LDDE-Demande de logement adapte" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Renouv_voie_electronique" nullable="false" originalDbColumnName="LDDE-Renouv voie electronique" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Date_demande_initiale" nullable="false" originalDbColumnName="LDDE-Date demande initiale" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_1" nullable="false" originalDbColumnName="LDDE-Filler 1" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_2" nullable="false" originalDbColumnName="LDDE-Filler 2" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="LDDE_Filler_3" nullable="false" originalDbColumnName="LDDE-Filler 3" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="Mutation" nullable="false" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="3" name="LDDE_Filler_5" nullable="false" originalDbColumnName="LDDE-Filler 5" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="LDDE_Filler_6" nullable="false" originalDbColumnName="LDDE-Filler 6" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="30" name="LDDE_Filler_7" nullable="false" originalDbColumnName="LDDE-Filler 7" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_de_creation" nullable="false" originalDbColumnName="ACAU-Date de creation" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_de_creation" nullable="false" originalDbColumnName="ACAU-Profil de creation" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="10" name="ACAU_Date_modification" nullable="false" originalDbColumnName="ACAU-Date modification" pattern="&quot;dd/MM/yyyy&quot;" precision="0" sourceType="DATE" type="id_Date" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="7" name="ACAU_Profil_modification" nullable="false" originalDbColumnName="ACAU-Profil modification" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_suppression" nullable="false" originalDbColumnName="ACAU-Code suppression" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_supprimable" nullable="false" originalDbColumnName="ACAU-Code supprimable" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" key="false" length="1" name="ACAU_Code_etat" nullable="false" originalDbColumnName="ACAU-Code etat" pattern="" precision="0" sourceType="CHAR" type="id_String" originalLength="-1" usefulColumn="true"/>
+      <column comment="" defaultValue="" key="false" length="15" name="ACRU_Rang_unique" nullable="false" originalDbColumnName="ACRU-Rang unique" pattern="" precision="0" sourceType="NUMERIC" type="id_Float" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tPrejob_1" offsetLabelX="0" offsetLabelY="0" source="tPrejob_1" target="tDBConnection_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="OnComponentOk1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tDBInput_2" offsetLabelX="0" offsetLabelY="0" source="tDBInput_2" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="out1" lineStyle="0" metaname="out1" offsetLabelX="0" offsetLabelY="0" source="tMap_1" target="tFileOutputExcel_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="out1" show="false"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="8" metaname="tDBInput_1" offsetLabelX="0" offsetLabelY="0" source="tDBInput_1" target="tMap_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="row2" show="false"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBConnection_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="CHECK" name="SHOW_SUBJOB_TITLE" value="true" show="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tPrejob_1" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="230;100;0"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="255;220;180"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tDBInput_2" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+</talendfile:ProcessType>

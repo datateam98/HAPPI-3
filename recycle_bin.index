@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<recyclebin:RecycleBin xmlns:recyclebin="http://www.talend.org/recyclebin" lastUpdate="2024-11-25T16:34:11.198+0100">
+  <deletedFolders>process/A_PROD/HAPPI/Pilotage/HAPPI</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Pilotage/HAPPI/Pilotage</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Pilotage/TBD_Indicateurs_Catherine</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Relogement/HAPPI</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Relogement/HAPPI/Relogement</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Relogement/Toucan</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Relogement/Toucan/Toucan</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Satisfactory/SATISFACTORY</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Supervision/Toucan</deletedFolders>
+  <deletedFolders>process/A_PROD/HAPPI/Test</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Management_Visuel/Management_Visuel</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Management_Visuel/SOC_PROP_1</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Toucan/Toucan</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Autres/Autres</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Autres/Pred</deletedFolders>
+  <deletedFolders>process/B_DOMINIQUE/Autres/Pred/Toucan</deletedFolders>
+  <deletedFolders>process/C_MIRACLE/Test/Test</deletedFolders>
+  <deletedItems id="_slafsLAmEeyPAt4TMB4gXg" path="Toucan/Toucan/Toucan/Toucan" type="PROCESS"/>
+  <deletedItems id="_xSA0oLgcEeyaaMjACDQv9g" path="Toucan/Toucan/Toucan/Toucan" type="PROCESS"/>
+  <deletedItems id="_wsLpAFUzEe2tNrtDoqazRw" path="Management_Visuel/SOC_PROP_1" type="PROCESS"/>
+  <deletedItems id="_qNH64FUzEe2tNrtDoqazRw" path="Management_Visuel/SOC_PROP_1" type="PROCESS"/>
+  <deletedItems id="_-n1EgFUzEe2tNrtDoqazRw" path="Management_Visuel/SOC_PROP_1" type="PROCESS"/>
+  <deletedItems id="_fsV-IESoEe2ppP_HUU_PlQ" path="Management_Visuel/SOC_PROP_1" type="PROCESS"/>
+  <deletedItems id="_DRxrIFU0Ee2tNrtDoqazRw" path="Management_Visuel/SOC_PROP_1" type="PROCESS"/>
+  <deletedItems id="_0oPI4NsKEeuK8-qTJR_X4w" path="Autres/Pred/Toucan" type="PROCESS"/>
+  <deletedItems id="_NBm1kNsNEeuK8-qTJR_X4w" path="Autres/Pred/Toucan" type="PROCESS"/>
+  <deletedItems id="_giV8cNWKEeucxfxzPSuuQg" path="Autres/Pred" type="PROCESS"/>
+</recyclebin:RecycleBin>

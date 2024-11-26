@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendMetadata:FileExcelConnection xmi:id="_W-BBUUZDEe25ls3FUVrDEA" name="Suivi_Activité_Projets" dataPackage="_W-BBUkZDEe25ls3FUVrDEA" Server="Localhost 127.0.0.1" FilePath="S:/Direction de la Maîtrise de la Performance/7- Suivi des demandes/Suivi des demandes Data - 2022.xlsx" Encoding="UTF-8" UseHeader="true" HeaderValue="4" FirstLineCaption="true" SheetName="Projets" firstColumn="2" lastColumn="" thousandSeparator="','" decimalSeparator="'.'" sheetList="Projets:w&#xA;">
+    <sheetColumns>A</sheetColumns>
+    <sheetColumns>B</sheetColumns>
+    <sheetColumns>C</sheetColumns>
+    <sheetColumns>D</sheetColumns>
+    <sheetColumns>E</sheetColumns>
+    <sheetColumns>F</sheetColumns>
+    <sheetColumns>G</sheetColumns>
+    <sheetColumns>H</sheetColumns>
+    <sheetColumns>I</sheetColumns>
+    <sheetColumns>J</sheetColumns>
+  </TalendMetadata:FileExcelConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_W-BBUkZDEe25ls3FUVrDEA" name="default" dataManager="_W-BBUUZDEe25ls3FUVrDEA">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_W-BBU0ZDEe25ls3FUVrDEA" id="_J6jLAEZDEe25ls3FUVrDEA" label="Suivi_Activité_Projets">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBVEZDEe25ls3FUVrDEA" label="Date_arrivee" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBVUZDEe25ls3FUVrDEA" label="Service" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBVkZDEe25ls3FUVrDEA" label="Demandeur" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBV0ZDEe25ls3FUVrDEA" label="Action" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBWEZDEe25ls3FUVrDEA" label="Statut" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_0dtrYEl2Ee21-ZXwlu0otw" name="Complexite" label="Complexite" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBWUZDEe25ls3FUVrDEA" label="Commentaire" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBWkZDEe25ls3FUVrDEA" label="Data_Analyst" length="200" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBW0ZDEe25ls3FUVrDEA" label="Date_de_debut_de_traitement" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_W-BBXEZDEe25ls3FUVrDEA" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_ngeKkFBVEe2em-FStKnB4w" name="Delai_traitement" label="Delai_traitement" length="-1" talendType="id_Integer"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_W-BBXUZDEe25ls3FUVrDEA" label="Date_de_livraison" length="-1" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>

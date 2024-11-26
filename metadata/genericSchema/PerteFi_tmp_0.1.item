@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010">
+  <TalendMetadata:GenericSchemaConnection xmi:id="_IK4NACHKEeuJf975KfG2bw" comment="connectionComment" label="connectionLabel" dataPackage="_IK4NASHKEeuJf975KfG2bw"/>
+  <TalendMetadata:GenericPackage xmi:id="_IK4NASHKEeuJf975KfG2bw" dataManager="_IK4NACHKEeuJf975KfG2bw">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_IK4NAiHKEeuJf975KfG2bw" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK4NAyHKEeuJf975KfG2bw" name="DT_ALIM" id="28066" label="DT_ALIM" length="-1" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;dd-MM-yyyy&quot;">
+        <initialValue xmi:id="_IK40ECHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40ESHKEeuJf975KfG2bw" name="DateTri" id="28067" label="DateTri" length="-1" precision="-1" sourceType="DATETIME" talendType="id_Date" pattern="&quot;yyyy-MM&quot;">
+        <initialValue xmi:id="_IK40EiHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40EyHKEeuJf975KfG2bw" name="Montant" id="28068" label="Montant" length="-1" precision="-1" sourceType="NUMERIC" talendType="id_BigDecimal">
+        <initialValue xmi:id="_IK40FCHKEeuJf975KfG2bw" body=""/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40FSHKEeuJf975KfG2bw" name="TypeLocalisation" id="28069" label="TypeLocalisation" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_IK40FiHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40FyHKEeuJf975KfG2bw" name="Localisation" id="28070" label="Localisation" length="100" precision="-1" sourceType="" talendType="id_String">
+        <initialValue xmi:id="_IK40GCHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40GSHKEeuJf975KfG2bw" name="Nature" id="28071" label="Nature" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_IK40GiHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40GyHKEeuJf975KfG2bw" name="MotifVac" id="28072" label="MotifVac" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_IK40HCHKEeuJf975KfG2bw"/>
+      </feature>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_IK40HSHKEeuJf975KfG2bw" name="SocieteProprietaire" id="28073" label="SocieteProprietaire" length="100" precision="-1" sourceType="VARCHAR" talendType="id_String">
+        <initialValue xmi:id="_IK40HiHKEeuJf975KfG2bw"/>
+      </feature>
+    </ownedElement>
+  </TalendMetadata:GenericPackage>
+</xmi:XMI>

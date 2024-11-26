@@ -1,0 +1,3 @@
+%~d0
+cd %~dp0
+java -Dtalend.component.manager.m2.repository="%cd%/../lib" -Xms256M -Xmx1024M -Dfile.encoding=UTF-8 -cp .;../lib/routines.jar;../lib/log4j-slf4j-impl-2.12.1.jar;../lib/log4j-api-2.12.1.jar;../lib/log4j-core-2.12.1.jar;../lib/crypto-utils.jar;../lib/slf4j-api-1.7.25.jar;../lib/dom4j-2.1.1.jar;mv_socprop_1_0_2.jar;mv_dp_budget_socprop_1_0_2.jar;mv_dp_recouvrement_socprop_1_0_3.jar;mv_dp_vacance_autre_mot_vac_0_1.jar; happi.mv_socprop_1_0_2.MV_SOCPROP_1  %*
